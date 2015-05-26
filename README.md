@@ -1,14 +1,26 @@
 # Prime Academy Solo Project
 
 ## Goals
-Demonstrate proficiency in:
-- Project Management, Client relationships, Scope of Work writing
-- MongoDB
-- Create API for admin user to upload new data files for visualization
-- Node
-- Full Compatibility for IE 10
+### Demonstrate proficiency in:
+
+#### General Skills:
+- Project Management & Architecture 
+- Time Estimation
+- Managing Client relationships, expectations setting
+- Statement of Work (Scope of Work) writing
 - QA: Responsive Design, Mobile Design
-- Secure User Authentication with bcrypt and passport
+
+#### Specific Accomplishments:
+- Create API for admin user to upload new data files for visualization
+- Full Compatibility with IE 10
+- Secure User Authentication
+
+#### Technologies:
+- MongoDB
+- Express
+- Mongoose
+- Node
+- bcrypt and passport
 - Jade
 - Sass / Compass
 - AngularJS
