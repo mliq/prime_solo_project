@@ -17,22 +17,27 @@ img {
 
 /* line 18, style.scss */
 .container {
-  border-radius: 25px;
-  width: 70em;
+  height: auto;
   margin-top: 3em;
+}
+
+/* line 25, style.scss */
+.row {
+  border-radius: 25px;
+  width: 85%;
   background: #bc7a41;
 }
 
-/* line 26, style.scss */
+/* line 30, style.scss */
 .grass {
-  position: absolute;
+  position: relative;
   background: url("/images/grass-nodirtcrop.png");
   height: 4em;
-  width: 70em;
+  width: 100%;
   margin: -4.8em 0 0 0;
 }
 
-/* line 40, style.scss */
+/* line 44, style.scss */
 .horse {
   position: relative;
   margin: -2em 0 2.5em 0;
