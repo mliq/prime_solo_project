@@ -6,3 +6,12 @@ body {
 a {
   color: #00B7FF;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.grass {
+  background-image: url("/images/grass3.png");
+}
