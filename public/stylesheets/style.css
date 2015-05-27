@@ -29,5 +29,10 @@ img {
   background: url("/images/grass-nodirt1.png");
   height: 4em;
   width: 70em;
-  margin: -4.1em 0 0 0;
+  margin: -3.8em 0 0 0;
+}
+
+/* line 39, style.scss */
+.horse {
+  margin: -1em 0 1.5em 0;
 }
