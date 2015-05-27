@@ -1,15 +1,9 @@
 var app = angular.module('app', []);
 
 var testData = {
-    "US": {
-        "percent": 30
-    },
-    "Saudi": {
-        "percent": 20
-    },
-    "Chile": {
-        "percent": 50
-    }
+    "US": 30,
+    "Saudi": 20,
+    "Chile": 50
 };
 
 app.controller("IndexController", ['$scope', '$http', function($scope, $http){
