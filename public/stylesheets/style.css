@@ -23,12 +23,15 @@ img {
 
 /* line 25, style.scss */
 .row {
-  border-radius: 25px;
   width: 85%;
   background: #bc7a41;
 }
+/* line 29, style.scss */
+.row:first-child {
+  border-radius: 25px 25px 0 0;
+}
 
-/* line 30, style.scss */
+/* line 33, style.scss */
 .grass {
   position: relative;
   background: url("/images/grass-nodirtcrop.png");
