@@ -2,12 +2,8 @@
 extends layout
 // block is placeholder, inserts into layout template at that point.
 block content
-  h1= title
-  p Welcome to the #{title}!
-
-    .horse
-        img(src="/images/horse36.png")
-
+    h1= title
+    p Welcome to the #{title}!
     .grass
-        //img(src="/images/grass3.png")
-        img.grass
+        .horse
+            img(src="/images/horse36.png")

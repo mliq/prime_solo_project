@@ -1,4 +1,6 @@
+@import 'compass';
 @import "compass/css3";
+
 
 body {
   padding: 50px;
@@ -14,5 +16,6 @@ img {
   height: auto;
 }
 .grass {
-  background-image: url("/images/grass3.png");
+  background: url("/images/grass3.png");
+  width: 90%;
 }

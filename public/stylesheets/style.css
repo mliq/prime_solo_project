@@ -1,17 +1,22 @@
+/* line 5, style.scss */
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
+/* line 10, style.scss */
 a {
   color: #00B7FF;
 }
 
+/* line 14, style.scss */
 img {
   max-width: 100%;
   height: auto;
 }
 
+/* line 18, style.scss */
 .grass {
-  background-image: url("/images/grass3.png");
+  background: url("/images/grass3.png");
+  width: 90%;
 }
