@@ -25,7 +25,6 @@ img {
 
 /* line 26, style.scss */
 .grass {
-  z-index: 2;
   position: absolute;
   background: url("/images/grass-nodirtcrop.png");
   height: 4em;
@@ -35,7 +34,6 @@ img {
 
 /* line 40, style.scss */
 .horse {
-  z-index: 3;
   position: relative;
   margin: -2em 0 2.5em 0;
 }

@@ -24,7 +24,7 @@ img {
 }
 
 .grass {
-  z-index: 2;
+  //z-index: 2;
   position: absolute;
   background: url("/images/grass-nodirtcrop.png");
   height: 4em;
@@ -38,7 +38,7 @@ img {
   //}
 }
 .horse{
-  z-index: 3;
+  //z-index: 3;
   position: relative;
   margin: -2em 0 2.5em 0;
 }
