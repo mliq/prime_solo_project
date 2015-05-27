@@ -10,7 +10,9 @@ block content
             .horse(region='{{key}}', style='margin-left: {{val}}%')
                 img(src="/images/cute_horse3.png")
             .grass
-    script(src='/vendor/bootstrap/bootstrap.js')
+        .myTable(ng-grid="myOptions")
     script(src='/vendor/jquery/jquery.min.js')
+    script(src='/vendor/bootstrap/bootstrap.min.js')
     script(src='/vendor/angular/angular.min.js')
+    script(src='/vendor/ng-grid/ng-grid-2.0.1.min.js')
     script(src='/javascripts/script.js')
