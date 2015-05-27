@@ -3,7 +3,9 @@ var app = angular.module('app', ['ngGrid']);
 var testData = {
     "US": 30,
     "Saudi": 20,
-    "Chile": 50
+    "Chile": 50,
+    "Argentina": 100,
+    "Italy": 80
 };
 
 app.controller("IndexController", ['$scope', '$http', function ($scope, $http) {

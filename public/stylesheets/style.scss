@@ -17,7 +17,7 @@ img {
 }
 .container{
   //width: 80%;
-  height:auto;
+  //height:auto;
   margin-top: 3em;
   //background: url("/images/");
 }
@@ -45,6 +45,8 @@ img {
   //z-index: 3;
   position: relative;
   margin: -2em 0 2.5em 0;
+  //height: 100%;
+  width: 100%
 }
 
 * {
