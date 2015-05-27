@@ -4,6 +4,7 @@ extends layout
 block content
     h1= title
     p Welcome to the #{title}!
-    .grass
-        .horse
-            img(src="/images/horse36.png")
+    each i in new Array(10)
+        .grass
+            .horse
+                img(src="/images/horse36.png")
