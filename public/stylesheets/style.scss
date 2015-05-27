@@ -15,14 +15,34 @@ img {
   max-width: 100%;
   height: auto;
 }
+.container{
+  border-radius: 25px;
+  width: 70em;
+  //background: url("/images/");
+  background: #bc7a41;
+}
+
 .grass {
-  background: url("/images/grass3.png");
-  width: 90%;
+  z-index: 2;
+  position: absolute;
+  background: url("/images/grass-nodirt1.png");
   height: 4em;
-  border: 2px solid black;
+  width: 70em;
+  margin: -4.1em 0 0 0;
+  //&:first-child {
+  //  border-radius: 25px 25px 0 0;
+  //}
+  //&:last-child {
+  //  border-radius: 0 0 25px 25px;
+  //}
 }
 .horse{
-  margin: 1.5em 0 0 0;
-  border: 2px solid black;
+  //z-index: 1;
+  //position: relative;
+  //margin: 1em 0 0 0;
+}
+
+* {
+  //border: 2px solid black;
 }
 

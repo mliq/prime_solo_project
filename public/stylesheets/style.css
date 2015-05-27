@@ -16,15 +16,18 @@ img {
 }
 
 /* line 18, style.scss */
-.grass {
-  background: url("/images/grass3.png");
-  width: 90%;
-  height: 4em;
-  border: 2px solid black;
+.container {
+  border-radius: 25px;
+  width: 70em;
+  background: #bc7a41;
 }
 
-/* line 24, style.scss */
-.horse {
-  margin: 1.5em 0 0 0;
-  border: 2px solid black;
+/* line 25, style.scss */
+.grass {
+  z-index: 2;
+  position: absolute;
+  background: url("/images/grass-nodirt1.png");
+  height: 4em;
+  width: 70em;
+  margin: -4.1em 0 0 0;
 }
