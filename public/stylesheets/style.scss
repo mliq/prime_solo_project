@@ -18,6 +18,7 @@ img {
 .container{
   border-radius: 25px;
   width: 70em;
+  margin-top: 3em;
   //background: url("/images/");
   background: #bc7a41;
 }
@@ -37,9 +38,9 @@ img {
   //}
 }
 .horse{
-  //z-index: 1;
+  z-index: 3;
   position: relative;
-  margin: -1em 0 1.5em 0;
+  margin: -2em 0 2.5em 0;
 }
 
 * {
