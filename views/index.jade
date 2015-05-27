@@ -1,11 +1,14 @@
 // Brings in layout.jade
 extends layout
 // block is placeholder, inserts into layout template at that point.
+    // each i in new Array(3)
 block content
     h1= title
     p Welcome to the #{title}!
-    .container
-        each i in new Array(10)
-            .horse
+    .container(ng-controller="IndexController")
+        .row(ng-repeat="region in data")
+            .horse(region='{{region}}')
                 img(src="/images/cute_horse3.png")
                 .grass
+    script(src='/vendor/angular/angular.min.js')
+    script(src='/javascripts/script.js')
