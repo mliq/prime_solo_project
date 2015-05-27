@@ -26,13 +26,14 @@ img {
 .grass {
   z-index: 2;
   position: absolute;
-  background: url("/images/grass-nodirt1.png");
+  background: url("/images/grass-nodirtcrop.png");
   height: 4em;
   width: 70em;
-  margin: -3.8em 0 0 0;
+  margin: -4.8em 0 0 0;
 }
 
 /* line 39, style.scss */
 .horse {
+  position: relative;
   margin: -1em 0 1.5em 0;
 }

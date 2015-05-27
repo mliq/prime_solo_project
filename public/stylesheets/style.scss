@@ -25,10 +25,10 @@ img {
 .grass {
   z-index: 2;
   position: absolute;
-  background: url("/images/grass-nodirt1.png");
+  background: url("/images/grass-nodirtcrop.png");
   height: 4em;
   width: 70em;
-  margin: -3.8em 0 0 0;
+  margin: -4.8em 0 0 0;
   //&:first-child {
   //  border-radius: 25px 25px 0 0;
   //}
@@ -38,7 +38,7 @@ img {
 }
 .horse{
   //z-index: 1;
-  //position: relative;
+  position: relative;
   margin: -1em 0 1.5em 0;
 }
 
