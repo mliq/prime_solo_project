@@ -16,6 +16,7 @@
     "jquery": "^2.1.4",
     "morgan": "~1.5.1",
     "ng-grid": "^2.0.1",
-    "serve-favicon": "~2.2.0"
+    "serve-favicon": "~2.2.0",
+    "xlsx-to-json": "^0.2.3"
   }
 }

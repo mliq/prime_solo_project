@@ -1,7 +1,6 @@
 @import 'compass';
 @import "compass/css3";
 
-
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
@@ -15,15 +14,13 @@ img {
   max-width: 100%;
   height: auto;
 }
+
 .container{
-  //width: 80%;
-  //height:auto;
+  height:auto;
   margin-top: 3em;
-  //background: url("/images/");
 }
 
 .row{
-  //border-radius: 25px;
   width: 85%;
   background: #bc7a41;
   &:first-child {
@@ -42,18 +39,17 @@ img {
   //}
 }
 .horse{
-  //z-index: 3;
   position: relative;
   margin: -2em 0 2.5em 0;
-  //height: 100%;
   width: 100%;
 }
 
 .myTable{
-  height: 13em;
-  width: 85%;
-  margin: 0 0 0 -1em;
+  height: 10.8em;
+  width: 84.8%;
+  margin: 0 0 0 -1.1em;
 }
+
 * {
   //border: 2px solid black;
 }

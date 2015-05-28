@@ -1,15 +1,15 @@
-/* line 5, style.scss */
+/* line 4, style.scss */
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-/* line 10, style.scss */
+/* line 9, style.scss */
 a {
   color: #00B7FF;
 }
 
-/* line 14, style.scss */
+/* line 13, style.scss */
 img {
   max-width: 100%;
   height: auto;
@@ -17,20 +17,21 @@ img {
 
 /* line 18, style.scss */
 .container {
+  height: auto;
   margin-top: 3em;
 }
 
-/* line 25, style.scss */
+/* line 23, style.scss */
 .row {
   width: 85%;
   background: #bc7a41;
 }
-/* line 29, style.scss */
+/* line 26, style.scss */
 .row:first-child {
   border-radius: 25px 25px 0 0;
 }
 
-/* line 33, style.scss */
+/* line 30, style.scss */
 .grass {
   position: relative;
   background: url("/images/grass-nodirtcrop.png");
@@ -39,16 +40,16 @@ img {
   margin: -4.8em 0 0 0;
 }
 
-/* line 44, style.scss */
+/* line 41, style.scss */
 .horse {
   position: relative;
   margin: -2em 0 2.5em 0;
   width: 100%;
 }
 
-/* line 52, style.scss */
+/* line 47, style.scss */
 .myTable {
-  height: 13em;
-  width: 85%;
-  margin: 0 0 0 -1em;
+  height: 10.8em;
+  width: 84.8%;
+  margin: 0 0 0 -1.1em;
 }
