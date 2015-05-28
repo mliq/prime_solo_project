@@ -4,7 +4,7 @@ var path = require('path');
 //var fs = require('fs');
 var router = express.Router();
 
-router.get('/', function(req,res,next) {
+router.get('/upload', function(req,res,next) {
     xlsxj({
         input: path.resolve(__dirname, "../public/data/data.xlsx"),
         output: path.resolve(__dirname, "../public/data/data.json")
@@ -16,6 +16,10 @@ router.get('/', function(req,res,next) {
             res.sendFile(path.resolve(__dirname, '../public/data/data.json'));
         }
     });
+});
+
+router.get('/json', function(req,res,next) {
+    res.sendFile(path.resolve(__dirname, '../public/data/data.json'));
 });
 
 module.exports = router;

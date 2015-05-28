@@ -5,7 +5,7 @@ extends layout
 block content
     h1= title
     p Welcome to the #{title}!
-    .container(ng-controller="IndexController")
+    .container.racetrack(ng-controller="IndexController")
         .row(ng-repeat="key in myData")
             .horse(region='{{key.region}}', style='margin-left: {{key.percent}}%')
                 img(src="/images/cute_horse3.png")

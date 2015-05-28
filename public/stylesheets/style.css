@@ -30,12 +30,8 @@ img {
 .row:first-child {
   border-radius: 10px 10px 0 0;
 }
-/* line 29, style.scss */
-.row:last-child {
-  border-radius: 0 0 10px 10px;
-}
 
-/* line 33, style.scss */
+/* line 30, style.scss */
 .grass {
   position: relative;
   background: url("/images/grass-nodirtcrop.png");
@@ -43,41 +39,46 @@ img {
   width: 100%;
   margin: -4.8em 0 0 0;
 }
-/* line 40, style.scss */
-.grass:last-child {
-  border-radius: 0 0 25px 25px;
-}
 
-/* line 44, style.scss */
+/* line 38, style.scss */
 .horse {
   position: relative;
   margin: -2em 0 2.5em 0;
   width: 100%;
 }
 
-/* line 50, style.scss */
+/* line 44, style.scss */
 .myTable {
   height: 10.8em;
   width: 84.8%;
-  margin: 0 0 0 -1.1em;
+  margin: 14em 0 0 -1.1em;
 }
 
-/* line 56, style.scss */
+/* line 50, style.scss */
 .ui-grid {
   border-radius: 10px;
 }
 
-/* line 59, style.scss */
+/* line 53, style.scss */
 .ui-grid-viewport {
-  border-radius: 10px;
+  border-radius: 0 0 10px 10px;
 }
 
-/* line 64, style.scss */
+/* line 58, style.scss */
 .ui-grid-header div {
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
 }
 
-/* line 67, style.scss */
+/* line 61, style.scss */
 .ui-grid-header-canvas div {
   border-radius: 0px;
+}
+
+/* line 69, style.scss */
+.racetrack .row:last-child .grass {
+  border-radius: 0 0 10px 10px;
+}
+/* line 72, style.scss */
+.racetrack .row:last-child {
+  border-radius: 0 0 10px 10px;
 }
