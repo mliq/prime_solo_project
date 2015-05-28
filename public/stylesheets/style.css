@@ -82,3 +82,8 @@ img {
 .racetrack .row:last-child {
   border-radius: 0 0 10px 10px;
 }
+
+/* line 77, style.scss */
+.btn-lg {
+  margin-left: -1em;
+}
