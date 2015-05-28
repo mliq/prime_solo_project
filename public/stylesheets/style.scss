@@ -24,7 +24,10 @@ img {
   width: 85%;
   background: #bc7a41;
   &:first-child {
-    border-radius: 25px 25px 0 0;
+    border-radius: 10px 10px 0 0;
+  }
+  &:last-child {
+    border-radius: 0 0 10px 10px;
   }
 }
 .grass {
@@ -34,9 +37,9 @@ img {
   height: 4em;
   width: 100%;
   margin: -4.8em 0 0 0;
-  //&:last-child {
-  //  border-radius: 0 0 25px 25px;
-  //}
+  &:last-child {
+    border-radius: 0 0 25px 25px;
+  }
 }
 .horse{
   position: relative;
@@ -50,6 +53,20 @@ img {
   margin: 0 0 0 -1.1em;
 }
 
+.ui-grid{
+  border-radius: 10px;
+}
+.ui-grid-viewport{
+  //&:last-child{
+  border-radius: 10px;
+  //}
+}
+.ui-grid-header div{
+  border-radius: 10px;
+}
+.ui-grid-header-canvas div{
+  border-radius: 0px;
+}
 * {
   //border: 2px solid black;
 }

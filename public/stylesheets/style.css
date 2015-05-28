@@ -28,10 +28,14 @@ img {
 }
 /* line 26, style.scss */
 .row:first-child {
-  border-radius: 25px 25px 0 0;
+  border-radius: 10px 10px 0 0;
+}
+/* line 29, style.scss */
+.row:last-child {
+  border-radius: 0 0 10px 10px;
 }
 
-/* line 30, style.scss */
+/* line 33, style.scss */
 .grass {
   position: relative;
   background: url("/images/grass-nodirtcrop.png");
@@ -39,17 +43,41 @@ img {
   width: 100%;
   margin: -4.8em 0 0 0;
 }
+/* line 40, style.scss */
+.grass:last-child {
+  border-radius: 0 0 25px 25px;
+}
 
-/* line 41, style.scss */
+/* line 44, style.scss */
 .horse {
   position: relative;
   margin: -2em 0 2.5em 0;
   width: 100%;
 }
 
-/* line 47, style.scss */
+/* line 50, style.scss */
 .myTable {
   height: 10.8em;
   width: 84.8%;
   margin: 0 0 0 -1.1em;
+}
+
+/* line 56, style.scss */
+.ui-grid {
+  border-radius: 10px;
+}
+
+/* line 59, style.scss */
+.ui-grid-viewport {
+  border-radius: 10px;
+}
+
+/* line 64, style.scss */
+.ui-grid-header div {
+  border-radius: 10px;
+}
+
+/* line 67, style.scss */
+.ui-grid-header-canvas div {
+  border-radius: 0px;
 }
