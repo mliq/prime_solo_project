@@ -6,8 +6,8 @@ block content
     h1= title
     p Welcome to the #{title}!
     .container(ng-controller="IndexController")
-        .row(ng-repeat="(key,val) in data")
-            .horse(region='{{key}}', style='margin-left: {{val}}%')
+        .row(ng-repeat="key in myData")
+            .horse(region='{{key.region}}', style='margin-left: {{key.percent}}%')
                 img(src="/images/cute_horse3.png")
             .grass
         .myTable(ui-grid="myOptions")

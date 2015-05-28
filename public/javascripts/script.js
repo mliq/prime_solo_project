@@ -9,14 +9,14 @@ var testData = {
 };
 
 app.controller("IndexController", ['$scope', '$http', function ($scope, $http) {
-    $scope.data = testData;
-    console.log($scope.data);
+    //$scope.data = testData;
+    //console.log($scope.data);
 
-    $scope.myData = [{name: "Moroni", age: 50},
-        {name: "Teancum", age: 43},
-        {name: "Jacob", age: 27},
-        {name: "Nephi", age: 29},
-        {name: "Enos", age: 34}];
+    $scope.myData = [
+        {rank: 1, region: "US", percent: 30},
+        {rank: 2, region: "Saudi", percent: 20},
+        {rank: 3, region: "Chile", percent: 100},
+        {rank: 4, region: "Italy", percent: 80}];
     $scope.myOptions = { data: 'myData' };
 }]);
 
