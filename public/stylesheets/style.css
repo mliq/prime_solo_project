@@ -45,3 +45,10 @@ img {
   margin: -2em 0 2.5em 0;
   width: 100%;
 }
+
+/* line 52, style.scss */
+.myTable {
+  height: 13em;
+  width: 85%;
+  margin: 0 0 0 -1em;
+}

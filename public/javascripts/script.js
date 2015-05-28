@@ -1,4 +1,4 @@
-var app = angular.module('app', ['ngGrid']);
+var app = angular.module('app', ['ui.grid']);
 
 var testData = {
     "US": 30,
