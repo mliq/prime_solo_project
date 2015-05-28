@@ -21,7 +21,7 @@ router.get('/upload', function(req,res,next) {
     });
 });
 
-router.post('/upload',[ multer({ dest: './uploads/'}), function(req, res){
+router.post('/upload',[ multer({ dest: './uploads/', rename: function(){return 'data'}}), function(req, res){
     console.dir(req.files);
     console.log(req.body) // form fields
     console.log(req.files) // form files
