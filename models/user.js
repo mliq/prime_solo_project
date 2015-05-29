@@ -8,7 +8,8 @@ var UserSchema = new Schema({
     password: { type: String, required: true },
     firstname: String,
     lastname: String,
-    email: String
+    email: String,
+    group: String
 });
 
 // Hash passwords before user documents are saved to MongoDB
