@@ -1,8 +1,6 @@
 var app = angular.module('app', ['ui.grid']);
 
 app.controller("IndexController", ['$scope', '$http', function ($scope, $http) {
-    //$scope.data = testData;
-    //console.log($scope.data);
 
     $http.get('/data/json').
         success(function (data) {
@@ -11,6 +9,11 @@ app.controller("IndexController", ['$scope', '$http', function ($scope, $http) {
         });
     $scope.myOptions = { data: 'myData' };
 
+    //$scope.auth = $http.get('/users/list').
+    //    success(function(data){
+    //        console.log(data);
+    //        data ? return true : return false;
+    //    });
 }]);
 
 $(document).ready(function () {
