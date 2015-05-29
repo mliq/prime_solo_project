@@ -1,0 +1,11 @@
+extends layout
+block content
+    form(action="/" method="post")
+        div
+            label(for="username") Username:
+            input(type="text" name="username" id="username")
+        div
+            label(for="password") Password:
+            input(type="password" name="password" id="password")
+        div.login
+            input.btn.btn-primary(type="submit" value="Log In")

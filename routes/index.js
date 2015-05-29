@@ -1,12 +1,19 @@
 var express = require('express');
 var router = express.Router();
+var passport = require('passport');
+var path = require('path');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: '3M IPD 2015 Sales Contest' });
+    res.render('login', { title: '3M IPD 2015 Sales Contest' });
+
 });
 
-// route to test if the user is logged in or not
-router.get('/loggedin', function(req, res) { res.send(req.isAuthenticated() ? req.user : '0'); });
+// passport.authenticate is specifying our ‘local’ strategy that we created, and specifies a failure and success redirect.
+router.post('/', passport.authenticate('local', {
+        successRedirect: '/users',
+        failureRedirect: '/'
+    })
+);
 
 module.exports = router;
