@@ -1,5 +1,7 @@
 extends layout
 block content
+    -if(messages.length)
+        div#note #{messages}
     form(action="/" method="post")
         div
             label(for="username") Username:

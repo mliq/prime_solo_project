@@ -10,6 +10,7 @@ var passport = require('passport');
 var session = require('express-session');
 var localStrategy = require('passport-local').Strategy;
 var User = require('./models/user');
+var flash = require('connect-flash');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
@@ -58,7 +59,7 @@ passport.use('local', new localStrategy({
         User.findOne({username: username}, function (err, user) {
             if (err) throw err;
             if (!user)
-                return done(null, false, {message: 'Incorrect username and password.'});
+                return done(null, false, req.flash('loginMessage','Incorrect username and password.'));
 
             // test a matching password
             user.comparePassword(password, function (err, isMatch) {
@@ -66,7 +67,7 @@ passport.use('local', new localStrategy({
                 if (isMatch)
                     return done(null, user);
                 else
-                    done(null, false, {message: 'Incorrect username and password.'});
+                    done(null, false, req.flash('loginMessage','Incorrect username and password.'));
             });
         });
     }));
@@ -83,6 +84,7 @@ MongoDB.once('open', function () {
     console.log('mongodb connection open');
 });
 
+app.use(flash());
 // uncomment after placing your favicon in /public
 //app.use(favicon(__dirname + '/public/favicon.ico'));
 app.use(logger('dev'));
