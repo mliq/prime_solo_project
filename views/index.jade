@@ -3,6 +3,13 @@ extends layout
 // block is placeholder, inserts into layout template at that point.
     // each i in new Array(3)
 block content
+    ul.nav.nav-pills
+        li
+            a(href='#home') Home
+        li
+            a(href='#admin') Admin
+    main(ng-view)
+
     h1= title
     p Welcome to the #{title}!
     .container.racetrack(ng-controller="IndexController")

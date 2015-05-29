@@ -4,6 +4,37 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var mongoose = require('mongoose');
+var User = require('./models/user')
+var session = require('express-session');
+
+var passport = require('passport')
+    , LocalStrategy = require('passport-local').Strategy;
+
+var mongoURI = "mongodb://localhost:27017/passport";
+var MongoDB = mongoose.connect(mongoURI).connection;
+MongoDB.on('error', function (err) {
+    console.log('mongodb connection error', err);
+});
+
+MongoDB.once('open', function () {
+    console.log('mongodb connection open');
+});
+
+passport.use(new LocalStrategy(
+    function(username, password, done) {
+        User.findOne({ username: username }, function (err, user) {
+            if (err) { return done(err); }
+            if (!user) {
+                return done(null, false, { message: 'Incorrect username.' });
+            }
+            if (!user.validPassword(password)) {
+                return done(null, false, { message: 'Incorrect password.' });
+            }
+            return done(null, user);
+        });
+    }
+));
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
@@ -23,6 +54,11 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+var auth = function(req, res, next){
+    if (!req.isAuthenticated()) res.send(401);
+    else next(); };
+
+//app.use('/', auth, routes);
 app.use('/', routes);
 app.use('/users', users);
 app.use('/data', data);
