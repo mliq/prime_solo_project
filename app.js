@@ -5,36 +5,11 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
-var User = require('./models/user')
+// Passport
+var passport = require('passport');
 var session = require('express-session');
-
-var passport = require('passport')
-    , LocalStrategy = require('passport-local').Strategy;
-
-var mongoURI = "mongodb://localhost:27017/passport";
-var MongoDB = mongoose.connect(mongoURI).connection;
-MongoDB.on('error', function (err) {
-    console.log('mongodb connection error', err);
-});
-
-MongoDB.once('open', function () {
-    console.log('mongodb connection open');
-});
-
-passport.use(new LocalStrategy(
-    function(username, password, done) {
-        User.findOne({ username: username }, function (err, user) {
-            if (err) { return done(err); }
-            if (!user) {
-                return done(null, false, { message: 'Incorrect username.' });
-            }
-            if (!user.validPassword(password)) {
-                return done(null, false, { message: 'Incorrect password.' });
-            }
-            return done(null, user);
-        });
-    }
-));
+var localStrategy = require('passport-local').Strategy;
+var User = require('./models/user');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
@@ -46,6 +21,68 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
+//Passport
+// Session Schema
+app.use(session({
+    secret: 'secret',
+    key: 'user',
+    resave: true,
+    saveUninitialized: false,
+    cookie: {maxAge: 600000, secure: false}
+}));
+// Initialize
+app.use(passport.initialize());
+app.use(passport.session());
+// Tell passport which strategy to use
+passport.use('local', new localStrategy({passReqToCallback: true, usernameField: 'username'},
+    function (req, username, password, done) {
+    }
+));
+// Authentication - Serialize and deserialize allow user information to be stored and retrieved from session.
+passport.serializeUser(function (user, done) {
+    done(null, user.id);
+});
+
+passport.deserializeUser(function (id, done) {
+    User.findById(id, function (err, user) {
+        if (err) done(err);
+        done(null, user);
+    });
+});
+
+passport.use('local', new localStrategy({
+        passReqToCallback: true,
+        usernameField: 'username'
+    },
+    function (req, username, password, done) {
+        User.findOne({username: username}, function (err, user) {
+            if (err) throw err;
+            if (!user)
+                return done(null, false, {message: 'Incorrect username and password.'});
+
+            // test a matching password
+            user.comparePassword(password, function (err, isMatch) {
+                if (err) throw err;
+                if (isMatch)
+                    return done(null, user);
+                else
+                    done(null, false, {message: 'Incorrect username and password.'});
+            });
+        });
+    }));
+
+// Mongo setup
+var mongoURI = "mongodb://localhost:27017/passport";
+var MongoDB = mongoose.connect(mongoURI).connection;
+
+MongoDB.on('error', function (err) {
+    console.log('mongodb connection error', err);
+});
+
+MongoDB.once('open', function () {
+    console.log('mongodb connection open');
+});
+
 // uncomment after placing your favicon in /public
 //app.use(favicon(__dirname + '/public/favicon.ico'));
 app.use(logger('dev'));
@@ -54,11 +91,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-var auth = function(req, res, next){
-    if (!req.isAuthenticated()) res.send(401);
-    else next(); };
-
-//app.use('/', auth, routes);
 app.use('/', routes);
 app.use('/users', users);
 app.use('/data', data);

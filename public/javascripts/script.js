@@ -4,13 +4,13 @@ app.controller("IndexController", ['$scope', '$http', function ($scope, $http) {
     //$scope.data = testData;
     //console.log($scope.data);
 
-   $http.get('/data/json').
+    $http.get('/data/json').
         success(function (data) {
             console.log(data);
             $scope.myData =  data;
         });
-
     $scope.myOptions = { data: 'myData' };
+
 }]);
 
 $(document).ready(function () {
