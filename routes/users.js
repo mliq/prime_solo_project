@@ -11,7 +11,7 @@ router.get('/', function(req, res, next) {
             res.render('index', {title: '3M IPD 2015 Sales Contest'});
         }
     } else {
-        res.json(req.isAuthenticated());
+        res.render('login', { title: '3M IPD 2015 Sales Contest',messages: req.flash('loginMessage') });
     }
 });
 
@@ -23,7 +23,7 @@ router.get('/list', function (req, res, next) {
             res.json(users);
         });
     } else {
-        res.json(req.isAuthenticated());
+        res.render('login', { title: '3M IPD 2015 Sales Contest',messages: req.flash('loginMessage') });
     }
 });
 

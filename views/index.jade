@@ -1,6 +1,9 @@
 extends layout
 
 block content
+    ul.nav.nav-pills
+        li
+            a(href="/logout") LOGOUT
     h1= title
     p Welcome to the #{title}!
     .container.racetrack(ng-controller="IndexController")

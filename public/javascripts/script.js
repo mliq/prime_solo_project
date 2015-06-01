@@ -1,13 +1,12 @@
 var app = angular.module('app', ['ui.grid','ngRoute']);
 
-app.config(['$routeProvider', function($routeProvider) {
-    $routeProvider.when('/users/upload',{
-    templateUrl: "/data/upload", controller: 'IndexController'}).otherwise({
-    redirectTo: '/'});
-}]);
+//app.config(['$routeProvider', function($routeProvider) {
+//    $routeProvider.when('/users/upload',{
+//    templateUrl: "/data/upload", controller: 'IndexController'}).otherwise({
+//    redirectTo: '/'});
+//}]);
 
 app.controller("IndexController", ['$scope', '$http', function ($scope, $http) {
-
     $http.get('/data/json').
         success(function (data) {
             console.log(data);
