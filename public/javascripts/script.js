@@ -1,18 +1,18 @@
-var app = angular.module('app', ['ui.grid','ngRoute']);
+var app = angular.module('app', ['ui.grid', 'ngRoute', 'ngDialog']);
 
-//app.config(['$routeProvider', function($routeProvider) {
-//    $routeProvider.when('/users/upload',{
-//    templateUrl: "/data/upload", controller: 'IndexController'}).otherwise({
-//    redirectTo: '/'});
-//}]);
+app.controller("IndexController", ['$scope', '$http', 'ngDialog', function ($scope, $http, ngDialog) {
 
-app.controller("IndexController", ['$scope', '$http', function ($scope, $http) {
+    $scope.dialog = function () {
+        console.log("run");
+        ngDialog.open({template: '/data/upload'});
+    };
+
     $http.get('/data/json').
         success(function (data) {
             console.log(data);
-            $scope.myData =  data;
+            $scope.myData = data;
         });
-    $scope.myOptions = { data: 'myData' };
+    $scope.myOptions = {data: 'myData'};
 
 }]);
 
@@ -21,5 +21,5 @@ $(document).ready(function () {
     $('.div').each(function (index) {
         $(this).css("z-index", index);
     });
-    $('.container').css('height','+=20em');
+    $('.container').css('height', '+=20em');
 });
