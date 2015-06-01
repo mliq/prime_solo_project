@@ -1,11 +1,6 @@
-var app = angular.module('app', ['ui.grid', 'ngRoute', 'ngDialog']);
+var app = angular.module('app', ['ui.grid']);
 
-app.controller("IndexController", ['$scope', '$http', 'ngDialog', function ($scope, $http, ngDialog) {
-
-    $scope.dialog = function () {
-        console.log("run");
-        ngDialog.open({template: '/data/upload'});
-    };
+app.controller("IndexController", ['$scope', '$http', function ($scope, $http) {
 
     $http.get('/data/json').
         success(function (data) {
