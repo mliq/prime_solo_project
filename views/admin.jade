@@ -1,8 +1,7 @@
 extends index
 block prepend content
-    .container(ng-controller="IndexController")
-        ul.nav.nav-pills
-            li
-                a(ng-click="dialog()") UPLOAD
-                //a(href="/data/upload") UPLOAD
+    ul.nav.nav-pills
+        li
+            a(href="/data/upload") UPLOAD
+    include modal.html
     main(ng-view)

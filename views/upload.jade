@@ -1,8 +1,10 @@
-h1= title
--if(messages.length)
-    div.alert.alert-success #{messages}
-form(role="form", action="/data/upload", method="post", enctype="multipart/form-data")
-    div.form-group-lg
-        label Upload File
-        input.btn.btn-lg(type="file", name="myfile", id="myfile")
-        input.btn.btn-primary(type='submit',value='Submit')
+extends layout
+block content
+    h1= title
+    -if(messages.length)
+        div.alert.alert-success #{messages}
+    form(role="form", action="/data/upload", method="post", enctype="multipart/form-data")
+        div.form-group-lg
+            label Upload File
+            input.btn.btn-lg(type="file", name="myfile", id="myfile")
+            input.btn.btn-primary(type='submit',value='Submit')
