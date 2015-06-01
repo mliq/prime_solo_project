@@ -7,7 +7,7 @@ var router = express.Router();
 router.get('/upload', function(req,res,next) {
     if (req.isAuthenticated() == true) {
         if(req.user.group==="admin"){
-            res.render('upload', { title: 'XLSX Upload' });
+            res.render('upload', { title: 'XLSX Upload',messages: req.flash('fileUpload') });
         } else {
             res.render('login', { title: '3M IPD 2015 Sales Contest',messages: req.flash('loginMessage') });
         }
@@ -24,16 +24,17 @@ router.post('/upload',[ multer({
     console.log(req.body); // form fields
     console.log(req.files); // form files
     xlsxj({
-        input: path.resolve(__dirname, "./uploads/data.xlsx"),
+        input: path.resolve(__dirname, "../uploads/data.xlsx"),
         output: path.resolve(__dirname, "../public/data/data.json")
     }, function(err, result) {
         if(err) {
             console.log(err);
         }else {
             console.log(result);
-            res.sendFile(path.resolve(__dirname, '../public/data/data.json'));
         }
     });
+    req.flash('fileUpload', 'Success');
+    res.redirect('/data/upload');
     res.status(204).end()
 }]);
 
