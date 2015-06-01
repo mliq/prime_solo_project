@@ -2,6 +2,18 @@ extends index
 block prepend content
     ul.nav.nav-pills
         li
-            a(href="/data/upload") UPLOAD
-    include modal.html
+            a(href="", data-toggle="modal", data-target=".myModal") UPLOAD
+    -if(messages.length)
+        div.alert.alert-success #{messages}
+    .myModal.modal.fade(tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true")
+        .modal-dialog
+            .modal-content
+                .modal-header
+                    button.close(type="button" data-dismiss="modal" aria-label="Close")
+                        span(aria-hidden="true") &times;
+                    h2 Upload New Data
+                .modal-footer
+                    form(role="form", action="/data/upload", method="post", enctype="multipart/form-data")
+                        input.btn.btn-lg(type="file", name="myfile", id="myfile")
+                        input.btn.btn-primary(type='submit',value='Submit')
     main(ng-view)
