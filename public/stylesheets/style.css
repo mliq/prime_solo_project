@@ -47,43 +47,43 @@ img {
   width: 100%;
 }
 
-/* line 44, style.scss */
+/* line 46, style.scss */
 .myTable {
   height: 10.8em;
   width: 84.8%;
   margin: 14em 0 0 -1.1em;
 }
 
-/* line 50, style.scss */
+/* line 52, style.scss */
 .ui-grid {
   border-radius: 10px;
 }
 
-/* line 53, style.scss */
+/* line 55, style.scss */
 .ui-grid-viewport {
   border-radius: 0 0 10px 10px;
 }
 
-/* line 58, style.scss */
+/* line 60, style.scss */
 .ui-grid-header div {
   border-radius: 10px 10px 0 0;
 }
 
-/* line 61, style.scss */
+/* line 63, style.scss */
 .ui-grid-header-canvas div {
   border-radius: 0px;
 }
 
-/* line 69, style.scss */
+/* line 71, style.scss */
 .racetrack .row:last-child .grass {
   border-radius: 0 0 10px 10px;
 }
-/* line 72, style.scss */
+/* line 74, style.scss */
 .racetrack .row:last-child {
   border-radius: 0 0 10px 10px;
 }
 
-/* line 77, style.scss */
+/* line 79, style.scss */
 .btn-lg {
   margin-left: -1em;
 }

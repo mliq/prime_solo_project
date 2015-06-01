@@ -8,7 +8,7 @@ block content
     p Welcome to the #{title}!
     .container.racetrack(ng-controller="IndexController")
         .row(ng-repeat="key in myData")
-            .horse(region='{{key.region}}', style='margin-left: {{key.percent}}%')
+            .horse(region='{{key.region}}', ng-style='{"margin-left": "{{key.percent}}%"}')
                 img(src="/images/cute_horse3.png")
             .grass
     .container(ng-controller="IndexController")

@@ -39,6 +39,8 @@ img {
   position: relative;
   margin: -2em 0 2.5em 0;
   width: 100%;
+  //-ms-transform: scale(1);
+  //transform: scale(1);
 }
 
 .myTable{
