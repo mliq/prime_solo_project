@@ -1,12 +1,13 @@
 doctype html
 html(ng-app="app")
   head
-    title= title
-    //link(rel='stylesheet', href='/vendor/normalize.css/normalize.css')
-    link(rel='stylesheet', href='/vendor/bootstrap/bootstrap.min.css')
-    link(rel='stylesheet', href='/vendor/ui-grid/ui-grid.css')
-    link(rel='stylesheet', href='/stylesheets/style.css')
-    include ga.html
+    block head
+      title= title
+      //link(rel='stylesheet', href='/vendor/normalize.css/normalize.css')
+      link(rel='stylesheet', href='/vendor/bootstrap/bootstrap.min.css')
+      link(rel='stylesheet', href='/vendor/ui-grid/ui-grid.css')
+      link(rel='stylesheet', href='/stylesheets/style.css')
+      include ga.html
   body
     block content
     script(src='/vendor/jquery/jquery.min.js')

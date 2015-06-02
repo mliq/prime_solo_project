@@ -16,6 +16,11 @@ router.post('/', passport.authenticate('local', {
     })
 );
 
+// MAP TEMP ROUTE
+router.get('/map', function(req, res, next) {
+    res.render('map', { title: '3M IPD 2015 Sales Contest',messages: req.flash('loginMessage') });
+});
+
 /* Handle Logout */
 router.get('/logout', function(req, res) {
     req.logout();
