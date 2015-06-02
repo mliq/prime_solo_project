@@ -11,16 +11,16 @@ app.controller("IndexController", ['$scope', '$http', function ($scope, $http) {
 
 }]);
 
-app.directive('tooltip', function(){
+app.directive('popover', function(){
     return {
         restrict: 'A',
         link: function(scope, element, attrs){
             $(element).hover(function(){
                 // on mouseenter
-                $(element).tooltip('show');
+                $(element).popover('show');
             }, function(){
                 // on mouseleave
-                $(element).tooltip('hide');
+                $(element).popover('hide');
             });
         }
     };

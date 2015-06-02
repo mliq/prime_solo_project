@@ -10,7 +10,7 @@ block content
         .row(ng-repeat="key in myData | orderBy:'percent' | limitTo:5")
             .horse(region='{{key.region}}', ng-style='{"margin-left": "{{key.percent}}%"}')
                 img(src="/images/cute_horse3.png",
-                title="HEY", tooltip)
+                rel="popover", data-content="And here's some amazing content. It's very engaging. right?", title="{{key.region}} test", data-placement="top", popover)
             .grass
     .container(ng-controller="IndexController")
         .myTable(ui-grid="myOptions")
