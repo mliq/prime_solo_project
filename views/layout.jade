@@ -10,9 +10,10 @@ html(ng-app="app")
       include ga.html
   body
     block content
-    script(src='/vendor/jquery/jquery.min.js')
-    script(src='/vendor/angular/angular.min.js')
-    script(src='/vendor/bootstrap/bootstrap.min.js')
-    //script(src='/vendor/angular-route/angular-route.min.js')
-    script(src='/vendor/ui-grid/ui-grid.js')
-    script(src='/javascripts/script.js')
+    block foot
+        script(src='/vendor/jquery/jquery.min.js')
+        script(src='/vendor/angular/angular.min.js')
+        script(src='/vendor/bootstrap/bootstrap.min.js')
+        //script(src='/vendor/angular-route/angular-route.min.js')
+        script(src='/vendor/ui-grid/ui-grid.js')
+        script(src='/javascripts/script.js')
