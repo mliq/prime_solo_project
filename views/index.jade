@@ -9,7 +9,8 @@ block content
     .container.racetrack(ng-controller="IndexController")
         .row(ng-repeat="key in myData | orderBy:'percent' | limitTo:5")
             .horse(region='{{key.region}}', ng-style='{"margin-left": "{{key.percent}}%"}')
-                img(src="/images/cute_horse3.png")
+                img(src="/images/cute_horse3.png",
+                title="HEY", tooltip)
             .grass
     .container(ng-controller="IndexController")
         .myTable(ui-grid="myOptions")
