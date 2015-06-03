@@ -14,7 +14,7 @@ block content
     //p Welcome to the #{title}!
     .main(ng-controller="IndexController")
         .container.racetrack
-            .row(ng-repeat="key in myData | orderBy:'-percent' | limitTo:5")
+            .row(ng-repeat="key in myData | limitTo:5")
                 .horse(region='{{key.region}}', ng-style='{"margin-left": "{{key.percent}}%"}')
                     img(src="/images/cute_horse3.png",
                     rel="popover", data-content="STATS", title="{{key.region}} test", data-placement="top", popover)
