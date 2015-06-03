@@ -8,7 +8,13 @@ app.controller("IndexController", ['$scope', '$http', function ($scope, $http) {
             $scope.myData = data;
         });
 
-    $scope.myOptions = {data: 'myData'};
+    $scope.myOptions = {
+        data: 'myData',
+        columnDefs: [
+            { name: 'region', displayName: 'Country' },
+            { name: 'percent', displayName: 'Progress', visible: true }
+        ]
+    };
 
 }]);
 
