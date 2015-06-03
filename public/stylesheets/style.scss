@@ -79,6 +79,29 @@ img {
 .btn-lg{
   margin-left: -1em;
 }
+
+// Login
+@font-face {
+  font-family: Sansus;
+  src: url("/fonts/Sansus-Webissimo-Regular.otf") format("opentype");
+}
+
+.loginContainer{
+  margin-top: -60px;
+}
+.jumbotron {
+  background-color: #e9f8ff;
+  padding: 25px;
+  color: red;
+  font-family: Sansus;
+}
+
+//.container input {
+//  width: 100%;
+//  clear: both;
+//}
+
+// Testing black border
 * {
   //border: 2px solid black;
 }

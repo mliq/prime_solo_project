@@ -87,3 +87,20 @@ img {
 .btn-lg {
   margin-left: -1em;
 }
+
+@font-face {
+  font-family: Sansus;
+  src: url("/fonts/Sansus-Webissimo-Regular.otf") format("opentype");
+}
+/* line 89, style.scss */
+.loginContainer {
+  margin-top: -60px;
+}
+
+/* line 92, style.scss */
+.jumbotron {
+  background-color: #e9f8ff;
+  padding: 25px;
+  color: red;
+  font-family: Sansus;
+}

@@ -1,14 +1,18 @@
 extends layout
 block content
-    h1= title
-    -if(messages.length)
-        div.alert.alert-danger #{messages}
-    form(action="/" method="post")
-        div
-            label(for="username") Username:
-            input(type="text" name="username" id="username")
-        div
-            label(for="password") Password:
-            input(type="password" name="password" id="password")
-        div.login
-            input.btn.btn-primary(type="submit" value="Log In")
+    .container-fluid.loginContainer
+        h1.jumbotron.text-center= title
+        -if(messages.length)
+            div.alert.alert-danger #{messages}
+        form.text-center(action="/" method="post")
+            div
+                label(for="username") Username:
+                br
+                input(type="text" name="username" id="username")
+            div
+                label(for="password") Password:
+                br
+                input(type="password" name="password" id="password")
+            div.login
+                br
+                input.btn.btn-primary(type="submit" value="Log In")
