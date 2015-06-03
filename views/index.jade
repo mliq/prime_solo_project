@@ -12,11 +12,12 @@ block content
                 li
                     a(href="/logout") LOGOUT
     //p Welcome to the #{title}!
-    .container.racetrack(ng-controller="IndexController")
-        .row(ng-repeat="key in myData | orderBy:'-percent' | limitTo:5")
-            .horse(region='{{key.region}}', ng-style='{"margin-left": "{{key.percent}}%"}')
-                img(src="/images/cute_horse3.png",
-                rel="popover", data-content="STATS", title="{{key.region}} test", data-placement="top", popover)
-            .grass
-    .container(ng-controller="IndexController")
-        .myTable(ui-grid="myOptions")
+    .main(ng-controller="IndexController")
+        .container.racetrack
+            .row(ng-repeat="key in myData | orderBy:'-percent' | limitTo:5")
+                .horse(region='{{key.region}}', ng-style='{"margin-left": "{{key.percent}}%"}')
+                    img(src="/images/cute_horse3.png",
+                    rel="popover", data-content="STATS", title="{{key.region}} test", data-placement="top", popover)
+                .grass
+        .container
+            .myTable(ui-grid="myOptions")
