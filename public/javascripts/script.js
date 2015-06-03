@@ -21,16 +21,13 @@ app.controller("IndexController", ['$scope', '$http', function ($scope, $http) {
             $scope.tableData = $scope.myData.splice(5);
         });
 
-    // First sort. If sorting here, don't sort in html.
-
-    //$scope.gridOpts.data.splice(0,1);
-
     $scope.myOptions = {
         data: 'tableData',
         columnDefs: [
             { name: 'region', displayName: 'Country' },
             { name: 'percent', displayName: 'Progress', visible: true }
-        ]
+        ],
+        minRowsToShow: 18
     };
 
 }]);
