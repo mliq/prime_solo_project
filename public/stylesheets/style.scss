@@ -1,9 +1,14 @@
 @import 'compass';
 @import "compass/css3";
 
+@font-face {
+  font-family: Sansus;
+  src: url("/fonts/Sansus-Webissimo-Regular.otf") format("opentype");
+}
+
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 16px Sansus,"Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
@@ -81,11 +86,6 @@ img {
 }
 
 // Login
-@font-face {
-  font-family: Sansus;
-  src: url("/fonts/Sansus-Webissimo-Regular.otf") format("opentype");
-}
-
 .loginContainer{
   margin-top: -60px;
 }
@@ -94,6 +94,19 @@ img {
   padding: 25px;
   color: red;
   font-family: Sansus;
+}
+
+label {
+  font-family: Sansus;
+  font-size: 25px;
+  margin-top: .5em;
+  //line-height: 2em;
+}
+.login {
+  font-family: Sansus;
+}
+form {
+  margin-top: -20px;
 }
 
 //.container input {

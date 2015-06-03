@@ -1,37 +1,41 @@
-/* line 4, style.scss */
+@font-face {
+  font-family: Sansus;
+  src: url("/fonts/Sansus-Webissimo-Regular.otf") format("opentype");
+}
+/* line 9, style.scss */
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 16px Sansus,"Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-/* line 9, style.scss */
+/* line 14, style.scss */
 a {
   color: #00B7FF;
 }
 
-/* line 13, style.scss */
+/* line 18, style.scss */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* line 18, style.scss */
+/* line 23, style.scss */
 .container {
   height: auto;
   margin-top: 3em;
 }
 
-/* line 23, style.scss */
+/* line 28, style.scss */
 .row {
   width: 85%;
   background: #bc7a41;
 }
-/* line 26, style.scss */
+/* line 31, style.scss */
 .row:first-child {
   border-radius: 10px 10px 0 0;
 }
 
-/* line 30, style.scss */
+/* line 35, style.scss */
 .grass {
   position: relative;
   background: url("/images/grass-nodirtcrop.png");
@@ -40,58 +44,54 @@ img {
   margin: -4.8em 0 0 0;
 }
 
-/* line 38, style.scss */
+/* line 43, style.scss */
 .horse {
   position: relative;
   margin: -2em 0 2.5em 0;
   width: 100%;
 }
 
-/* line 46, style.scss */
+/* line 51, style.scss */
 .myTable {
   height: 10.8em;
   width: 84.8%;
   margin: 14em 0 0 -1.1em;
 }
 
-/* line 52, style.scss */
+/* line 57, style.scss */
 .ui-grid {
   border-radius: 10px;
 }
 
-/* line 55, style.scss */
+/* line 60, style.scss */
 .ui-grid-viewport {
   border-radius: 0 0 10px 10px;
 }
 
-/* line 60, style.scss */
+/* line 65, style.scss */
 .ui-grid-header div {
   border-radius: 10px 10px 0 0;
 }
 
-/* line 63, style.scss */
+/* line 68, style.scss */
 .ui-grid-header-canvas div {
   border-radius: 0px;
 }
 
-/* line 71, style.scss */
+/* line 76, style.scss */
 .racetrack .row:last-child .grass {
   border-radius: 0 0 10px 10px;
 }
-/* line 74, style.scss */
+/* line 79, style.scss */
 .racetrack .row:last-child {
   border-radius: 0 0 10px 10px;
 }
 
-/* line 79, style.scss */
+/* line 84, style.scss */
 .btn-lg {
   margin-left: -1em;
 }
 
-@font-face {
-  font-family: Sansus;
-  src: url("/fonts/Sansus-Webissimo-Regular.otf") format("opentype");
-}
 /* line 89, style.scss */
 .loginContainer {
   margin-top: -60px;
@@ -103,4 +103,21 @@ img {
   padding: 25px;
   color: red;
   font-family: Sansus;
+}
+
+/* line 99, style.scss */
+label {
+  font-family: Sansus;
+  font-size: 25px;
+  margin-top: .5em;
+}
+
+/* line 105, style.scss */
+.login {
+  font-family: Sansus;
+}
+
+/* line 108, style.scss */
+form {
+  margin-top: -20px;
 }
