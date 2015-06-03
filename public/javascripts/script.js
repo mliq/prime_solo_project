@@ -7,6 +7,7 @@ app.controller("IndexController", ['$scope', '$http', function ($scope, $http) {
             console.log(data);
             $scope.myData = data;
         });
+
     $scope.myOptions = {data: 'myData'};
 
 }]);

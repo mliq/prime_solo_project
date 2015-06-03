@@ -52,6 +52,21 @@ img {
   //transform: scale(1);
 }
 
+.racetrack{
+  .row:last-child .grass{
+    border-radius: 0 0 10px 10px;
+  }
+  .row:last-child{
+    border-radius: 0 0 10px 10px;
+  }
+}
+.btn-lg{
+  margin-left: -1em;
+}
+
+// ===============
+// TABLE (ui-grid)
+// ===============
 .myTable{
   height: 10.8em;
   width: 84.8%;
@@ -76,18 +91,6 @@ img {
 //  border: 2px solid black;
 //}
 
-.racetrack{
-  .row:last-child .grass{
-    border-radius: 0 0 10px 10px;
-  }
-  .row:last-child{
-    border-radius: 0 0 10px 10px;
-  }
-}
-
-.btn-lg{
-  margin-left: -1em;
-}
 
 // ============
 // LOGIN PAGE
@@ -95,11 +98,12 @@ img {
 .loginContainer{
   margin-top: -60px;
 }
+
 .jumbotron {
-  background-color: #e9f8ff;
   padding: 25px;
   color: red;
   font-family: Sansus;
+  background-color: #e9f8ff;
 }
 
 label {
@@ -112,6 +116,8 @@ label {
   font-family: Sansus;
 }
 form {
+  padding: 10px;
+  background-color: #e9f8ff;
   margin-top: -20px;
 }
 
