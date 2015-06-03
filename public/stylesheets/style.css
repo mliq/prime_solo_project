@@ -9,33 +9,38 @@ body {
 }
 
 /* line 14, style.scss */
+.nav > li > a {
+  padding: 0 0 0 5px;
+}
+
+/* line 18, style.scss */
 a {
   color: #00B7FF;
 }
 
-/* line 18, style.scss */
+/* line 22, style.scss */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* line 23, style.scss */
+/* line 27, style.scss */
 .container {
   height: auto;
   margin-top: 3em;
 }
 
-/* line 28, style.scss */
+/* line 32, style.scss */
 .row {
   width: 85%;
   background: #bc7a41;
 }
-/* line 31, style.scss */
+/* line 35, style.scss */
 .row:first-child {
   border-radius: 10px 10px 0 0;
 }
 
-/* line 35, style.scss */
+/* line 39, style.scss */
 .grass {
   position: relative;
   background: url("/images/grass-nodirtcrop.png");
@@ -44,60 +49,60 @@ img {
   margin: -4.8em 0 0 0;
 }
 
-/* line 43, style.scss */
+/* line 47, style.scss */
 .horse {
   position: relative;
   margin: -2em 0 2.5em 0;
   width: 100%;
 }
 
-/* line 51, style.scss */
+/* line 55, style.scss */
 .myTable {
   height: 10.8em;
   width: 84.8%;
-  margin: 14em 0 0 -1.1em;
+  margin: 16em 0 0 -.9em;
 }
 
-/* line 57, style.scss */
+/* line 61, style.scss */
 .ui-grid {
   border-radius: 10px;
 }
 
-/* line 60, style.scss */
+/* line 64, style.scss */
 .ui-grid-viewport {
   border-radius: 0 0 10px 10px;
 }
 
-/* line 65, style.scss */
+/* line 69, style.scss */
 .ui-grid-header div {
   border-radius: 10px 10px 0 0;
 }
 
-/* line 68, style.scss */
+/* line 72, style.scss */
 .ui-grid-header-canvas div {
   border-radius: 0px;
 }
 
-/* line 76, style.scss */
+/* line 80, style.scss */
 .racetrack .row:last-child .grass {
   border-radius: 0 0 10px 10px;
 }
-/* line 79, style.scss */
+/* line 83, style.scss */
 .racetrack .row:last-child {
   border-radius: 0 0 10px 10px;
 }
 
-/* line 84, style.scss */
+/* line 88, style.scss */
 .btn-lg {
   margin-left: -1em;
 }
 
-/* line 89, style.scss */
+/* line 95, style.scss */
 .loginContainer {
   margin-top: -60px;
 }
 
-/* line 92, style.scss */
+/* line 98, style.scss */
 .jumbotron {
   background-color: #e9f8ff;
   padding: 25px;
@@ -105,19 +110,19 @@ img {
   font-family: Sansus;
 }
 
-/* line 99, style.scss */
+/* line 105, style.scss */
 label {
   font-family: Sansus;
   font-size: 25px;
   margin-top: .5em;
 }
 
-/* line 105, style.scss */
+/* line 111, style.scss */
 .login {
   font-family: Sansus;
 }
 
-/* line 108, style.scss */
+/* line 114, style.scss */
 form {
   margin-top: -20px;
 }

@@ -1,11 +1,17 @@
 extends layout
-
 block content
-    ul.nav.nav-pills
-        li
-            a(href="/logout") LOGOUT
-    h1= title
-    p Welcome to the #{title}!
+    .navbar.navbar-fixed-top
+        .container
+            ul.nav.nav-pills
+                li
+                    =title
+                block admin
+                li
+                    a(href="/logout") LOGOUT
+            //ul.nav.nav-pills.nav-stacked.navbar-right
+                li
+                    a(href="/logout") LOGOUT
+    //p Welcome to the #{title}!
     .container.racetrack(ng-controller="IndexController")
         .row(ng-repeat="key in myData | orderBy:'-percent' | limitTo:5")
             .horse(region='{{key.region}}', ng-style='{"margin-left": "{{key.percent}}%"}')

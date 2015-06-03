@@ -1,6 +1,5 @@
 extends index
-block prepend content
-    ul.nav.nav-pills
+block append admin
         li
             a(href="", data-toggle="modal", data-target=".myModal") UPLOAD
     -if(messages.length)

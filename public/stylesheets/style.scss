@@ -11,6 +11,10 @@ body {
   font: 16px Sansus,"Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
+.nav>li>a {
+  padding: 0 0 0 5px;
+}
+
 a {
   color: #00B7FF;
 }
@@ -51,7 +55,7 @@ img {
 .myTable{
   height: 10.8em;
   width: 84.8%;
-  margin: 14em 0 0 -1.1em;
+  margin: 16em 0 0 -.9em;
 }
 
 .ui-grid{
@@ -85,7 +89,9 @@ img {
   margin-left: -1em;
 }
 
-// Login
+// ============
+// LOGIN PAGE
+// ============
 .loginContainer{
   margin-top: -60px;
 }
