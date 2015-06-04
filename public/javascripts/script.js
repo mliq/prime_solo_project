@@ -8,7 +8,12 @@ function sortByPc(a,b) {
     return 0;
 }
 
-var svgSmall = '<svg width="25" height="25"> <circle id="svg_1" r="4" cy="6.25" cx="6.25" stroke-width="1.5" stroke="#000000" fill="none"></circle> <circle id="svg_2" r="4" cy="6.25" cx="18.75" stroke-width="1.5" stroke="#000000" fill="none"></circle> <circle id="svg_3" r="4" cy="18.75" cx="6.25" stroke-width="1.5" stroke="#000000" fill="none"></circle> <circle id="svg_4" r="4" cy="18.75" cx="18.75" stroke-width="1.5" stroke="#000000" fill="none"></circle></svg>';
+var svgSmall = '<svg class="text-center" width="40" height="30">' +
+    '<circle id="svg_1" r="5" cy="7" cx="11" stroke-width="1.5" stroke="#000000" fill="none"></circle>' +
+    '<circle id="svg_2" r="5" cy="7" cx="27" stroke-width="1.5" stroke="#000000" fill="none"></circle>' +
+    '<circle id="svg_3" r="5" cy="21" cx="11" stroke-width="1.5" stroke="#000000" fill="none"></circle>' +
+    '<circle id="svg_4" r="5" cy="21" cx="27" stroke-width="1.5" stroke="#000000" fill="none"></circle>' +
+    '</svg>';
 var goalsTemplate = "<img ng-src='/svg'>";
     //'<div class="ngCellText" ng-class="col.colIndex()"><a href="{{row.getProperty(\'age\')}}">Visible text</a></div>';
 
@@ -25,10 +30,10 @@ app.controller("IndexController", ['$scope', '$http', function ($scope, $http) {
             console.log($scope.tableData);
             //$scope.tableData[9].image = svgSmall;
         });
-
+//headerCellTemplate: svgSmall,
     $scope.columns = [
-        { field: 'Image', name: 'Goals', visible: false},
-        { name: 'Goals', cellTemplate: svgSmall},
+        { field: 'Image', visible: false},
+        { name: ' ', cellTemplate: svgSmall, width: 40},
         { field: 'region', name: 'Country' },
         { field: 'percent', name: 'Progress'}
     ];
