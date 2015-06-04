@@ -15,7 +15,9 @@ var svgSmall = '<svg class="text-center" width="40" height="30">' +
     '<circle id="svg_4" r="5" cy="21" cx="27" stroke-width="1.5" stroke="#000000" fill="none"></circle>' +
     '</svg>';
 
-app.controller("IndexController", ['$scope', '$http', function ($scope, $http) {
+var stableHorse = '<img class="stableHorse" src="/images/new/stable_horse.png">';
+
+    app.controller("IndexController", ['$scope', '$http', function ($scope, $http) {
 
     $http.get('/data/json').
         success(function (data) {
@@ -33,6 +35,7 @@ app.controller("IndexController", ['$scope', '$http', function ($scope, $http) {
 
     $scope.columns = [
         { field: 'Image', visible: false},
+        { name: '  ', cellTemplate: stableHorse, width: 40},
         { name: ' ', cellTemplate: svgSmall, width: 40},
         { field: 'region', name: 'Country' },
         { field: 'percent', name: 'Progress'}

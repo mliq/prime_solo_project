@@ -120,23 +120,18 @@ img {
   border-radius: 0px;
 }
 
-/* line 121, style.scss */
-.ui-grid-header {
+/* line 139, style.scss */
+.stableHorse {
+  width: auto;
   height: 30px;
-  max-height: 30px;
 }
 
-/* line 126, style.scss */
-.ui-grid-header-cell {
-  padding: 0px;
-}
-
-/* line 138, style.scss */
+/* line 147, style.scss */
 .loginContainer {
   margin-top: -40px;
 }
 
-/* line 142, style.scss */
+/* line 151, style.scss */
 .jumbotron {
   padding: 25px;
   color: red;
@@ -144,37 +139,37 @@ img {
   background-color: #e9f8ff;
 }
 
-/* line 149, style.scss */
+/* line 158, style.scss */
 label {
   font-family: Sansus;
   font-size: 25px;
   margin-top: .5em;
 }
 
-/* line 156, style.scss */
+/* line 165, style.scss */
 .login {
   font-family: Sansus;
 }
 
-/* line 160, style.scss */
+/* line 169, style.scss */
 form {
   padding: 10px;
   background-color: #e9f8ff;
 }
 
-/* line 166, style.scss */
+/* line 175, style.scss */
 div.alert.alert-danger {
   margin-top: -25px;
   margin-bottom: 5px;
   padding: 15px;
 }
 
-/* line 172, style.scss */
+/* line 181, style.scss */
 input {
   font-size: 22px !important;
 }
 
-/* line 184, style.scss */
+/* line 193, style.scss */
 .blue {
   fill: blue;
 }
