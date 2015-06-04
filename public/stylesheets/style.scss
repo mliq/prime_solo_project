@@ -35,6 +35,12 @@ img {
   &:first-child {
     border-radius: 10px 10px 0 0;
   }
+  &:last-child .grass{
+    border-radius: 0 0 10px 10px;
+  }
+  &:last-child{
+    border-radius: 0 0 10px 10px;
+  }
 }
 .grass {
   //z-index: 2;
@@ -53,13 +59,9 @@ img {
 }
 
 .racetrack{
-  .row:last-child .grass{
-    border-radius: 0 0 10px 10px;
-  }
-  .row:last-child{
-    border-radius: 0 0 10px 10px;
-  }
+
 }
+
 .btn-lg{
   margin-left: -1em;
 }
@@ -138,9 +140,7 @@ ul.nav.nav-pills {
 // ============
 // CIRCLES
 // ============
-svg {
-  width:50px;
-}
+
 .blue {
   fill: blue;
 }

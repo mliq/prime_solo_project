@@ -39,8 +39,16 @@ img {
 .row:first-child {
   border-radius: 10px 10px 0 0;
 }
+/* line 38, style.scss */
+.row:last-child .grass {
+  border-radius: 0 0 10px 10px;
+}
+/* line 41, style.scss */
+.row:last-child {
+  border-radius: 0 0 10px 10px;
+}
 
-/* line 39, style.scss */
+/* line 45, style.scss */
 .grass {
   position: relative;
   background: url("/images/grass-nodirtcrop.png");
@@ -49,59 +57,50 @@ img {
   margin: -4.8em 0 0 0;
 }
 
-/* line 47, style.scss */
+/* line 53, style.scss */
 .horse {
   position: relative;
   margin: -2em 0 2.5em 0;
   width: 100%;
 }
 
-/* line 56, style.scss */
-.racetrack .row:last-child .grass {
-  border-radius: 0 0 10px 10px;
-}
-/* line 59, style.scss */
-.racetrack .row:last-child {
-  border-radius: 0 0 10px 10px;
-}
-
-/* line 63, style.scss */
+/* line 65, style.scss */
 .btn-lg {
   margin-left: -1em;
 }
 
-/* line 70, style.scss */
+/* line 72, style.scss */
 .myTable {
   width: 84.8%;
   margin: 16em 0 0 -.9em;
 }
 
-/* line 76, style.scss */
+/* line 78, style.scss */
 .ui-grid {
   border-radius: 10px;
 }
 
-/* line 79, style.scss */
+/* line 81, style.scss */
 .ui-grid-viewport {
   border-radius: 0 0 10px 10px;
 }
 
-/* line 84, style.scss */
+/* line 86, style.scss */
 .ui-grid-header div {
   border-radius: 10px 10px 0 0;
 }
 
-/* line 87, style.scss */
+/* line 89, style.scss */
 .ui-grid-header-canvas div {
   border-radius: 0px;
 }
 
-/* line 98, style.scss */
+/* line 100, style.scss */
 .loginContainer {
   margin-top: -60px;
 }
 
-/* line 102, style.scss */
+/* line 104, style.scss */
 .jumbotron {
   padding: 25px;
   color: red;
@@ -109,26 +108,26 @@ img {
   background-color: #e9f8ff;
 }
 
-/* line 109, style.scss */
+/* line 111, style.scss */
 label {
   font-family: Sansus;
   font-size: 25px;
   margin-top: .5em;
 }
 
-/* line 115, style.scss */
+/* line 117, style.scss */
 .login {
   font-family: Sansus;
 }
 
-/* line 118, style.scss */
+/* line 120, style.scss */
 form {
   padding: 10px;
   background-color: #e9f8ff;
   margin-top: -20px;
 }
 
-/* line 129, style.scss */
+/* line 131, style.scss */
 ul.nav.nav-pills {
   border: 2px solid black;
   border-radius: 25px;
@@ -136,11 +135,6 @@ ul.nav.nav-pills {
   display: inline-block;
   background-color: rgba(255, 255, 255, 0.5);
   margin-top: -80px;
-}
-
-/* line 141, style.scss */
-svg {
-  width: 50px;
 }
 
 /* line 144, style.scss */
