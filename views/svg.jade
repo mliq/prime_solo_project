@@ -1,7 +1,7 @@
 extends layout
 block content
-    svg(width=50, height=64)
-        circle(id="svg_1" r="8" cy="21" cx="12.5" stroke-width="2" stroke="#000000" fill="none")
-        circle(id="svg_2" r="8" cy="21" cx="37.5" stroke-width="2" stroke="#000000" fill="none")
-        circle(id="svg_3" r="8" cy="46" cx="12.5" stroke-width="2" stroke="#000000" fill="none")
-        circle(id="svg_4" r="8" cy="46" cx="37.5" stroke-width="2" stroke="#000000" fill="none")
+    svg(width=50, height=64, data-toggle="tooltip", data-placement="top", title="Tooltip on top", tooltip)
+        circle(class="svg_1" r="8" cy="21" cx="12.5" stroke-width="2" stroke="#000000" fill="none")
+        circle(class="svg_2" r="8" cy="21" cx="37.5" stroke-width="2" stroke="#000000" fill="none")
+        circle(class="svg_3" r="8" cy="46" cx="12.5" stroke-width="2" stroke="#000000" fill="none")
+        circle(class="svg_4" r="8" cy="46" cx="37.5" stroke-width="2" stroke="#000000" fill="none")
