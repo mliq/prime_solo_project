@@ -15,8 +15,25 @@ body {
   padding: 0 0 0 5px;
 }
 
+
+ul.nav.nav-pills {
+  border: 2px solid black;
+  border-radius: 25px;
+  padding: 3px 10px;
+  display: inline-block;
+  background-color: transparentize(white, 0.5);
+  margin-top: 10px;
+  &:hover {
+    background-color: white;
+  }
+}
+
 a {
   color: #00B7FF;
+  &:hover{
+    color: #f0000d;
+    background-color: white!important;
+  }
 }
 
 img {
@@ -138,15 +155,6 @@ div.alert.alert-danger {
 //  width: 100%;
 //  clear: both;
 //}
-
-ul.nav.nav-pills {
-  border: 2px solid black;
-  border-radius: 25px;
-  padding: 3px 10px;
-  display: inline-block;
-  background-color: transparentize(white, 0.5);
-  margin-top: 10px;
-}
 
 // ============
 // CIRCLES

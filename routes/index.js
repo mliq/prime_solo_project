@@ -8,9 +8,9 @@ router.get('/', function(req, res, next) {
     res.render('login', { title: '3M IPD 2015 Sales Contest',messages: req.flash('loginMessage') });
 });
 
-//router.get('/svg', function(req, res, next) {
-//    res.render('svg', { title: '3M IPD 2015 Sales Contest',messages: req.flash('loginMessage') });
-//});
+router.get('/svg', function(req, res, next) {
+    res.render('svgSmall', {});
+});
 
 // passport.authenticate is specifying our ‘local’ strategy that we created, and specifies a failure and success redirect.
 router.post('/', passport.authenticate('local', {

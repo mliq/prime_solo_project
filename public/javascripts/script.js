@@ -8,25 +8,30 @@ function sortByPc(a,b) {
     return 0;
 }
 
+var svgSmall = "<img src='/svg'>";
+
 app.controller("IndexController", ['$scope', '$http', function ($scope, $http) {
 
     $http.get('/data/json').
         success(function (data) {
             console.log(data);
             $scope.myData = data.sort(sortByPc);
-            //console.log($scope.myData);
-            // | orderBy:'-percent'
 
             //Remove first 5 rows from table data.
             $scope.tableData = $scope.myData.splice(5);
+            // Add Images
+            $scope.tableData[9].image = svgSmall;
+            $scope.columns = [
+                { name: 'Image', displayName: 'Goals'},
+                { name: 'region', displayName: 'Country' },
+                { name: 'percent', displayName: 'Progress', visible: true }
+                ]
+            $scope.columns.push({ field: 'Image'});
         });
 
     $scope.myOptions = {
         data: 'tableData',
-        columnDefs: [
-            { name: 'region', displayName: 'Country' },
-            { name: 'percent', displayName: 'Progress', visible: true }
-        ],
+        columnDefs: $scope.columns,
         minRowsToShow: 18
     };
 
