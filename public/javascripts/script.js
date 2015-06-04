@@ -14,8 +14,6 @@ var svgSmall = '<svg class="text-center" width="40" height="30">' +
     '<circle id="svg_3" r="5" cy="21" cx="11" stroke-width="1.5" stroke="#000000" fill="none"></circle>' +
     '<circle id="svg_4" r="5" cy="21" cx="27" stroke-width="1.5" stroke="#000000" fill="none"></circle>' +
     '</svg>';
-var goalsTemplate = "<img ng-src='/svg'>";
-    //'<div class="ngCellText" ng-class="col.colIndex()"><a href="{{row.getProperty(\'age\')}}">Visible text</a></div>';
 
 app.controller("IndexController", ['$scope', '$http', function ($scope, $http) {
 
@@ -30,7 +28,9 @@ app.controller("IndexController", ['$scope', '$http', function ($scope, $http) {
             console.log($scope.tableData);
             //$scope.tableData[9].image = svgSmall;
         });
-//headerCellTemplate: svgSmall,
+
+//headerCellTemplate: svgSmall - Bug causes header to grow, or other headings to appear cut off. https://github.com/angular-ui/ng-grid/issues/1776
+
     $scope.columns = [
         { field: 'Image', visible: false},
         { name: ' ', cellTemplate: svgSmall, width: 40},

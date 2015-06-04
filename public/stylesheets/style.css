@@ -169,7 +169,12 @@ div.alert.alert-danger {
   padding: 15px;
 }
 
-/* line 181, style.scss */
+/* line 172, style.scss */
+input {
+  font-size: 22px !important;
+}
+
+/* line 184, style.scss */
 .blue {
   fill: blue;
 }
