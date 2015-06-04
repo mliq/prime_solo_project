@@ -72,6 +72,7 @@ img {
 
 /* line 70, style.scss */
 .myTable {
+  width: 84.8%;
   margin: 16em 0 0 -.9em;
 }
 
@@ -125,4 +126,24 @@ form {
   padding: 10px;
   background-color: #e9f8ff;
   margin-top: -20px;
+}
+
+/* line 129, style.scss */
+ul.nav.nav-pills {
+  border: 2px solid black;
+  border-radius: 25px;
+  padding: 3px 10px;
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-top: -80px;
+}
+
+/* line 141, style.scss */
+svg {
+  width: 50px;
+}
+
+/* line 144, style.scss */
+.blue {
+  fill: blue;
 }
