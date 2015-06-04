@@ -8,13 +8,12 @@
 
 body {
   padding: 50px;
-  font: 16px Sansus,"Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 16px Sansus, "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-.nav>li>a {
+.nav > li > a {
   padding: 0 0 0 5px;
 }
-
 
 ul.nav.nav-pills {
   border: 2px solid black;
@@ -30,9 +29,9 @@ ul.nav.nav-pills {
 
 a {
   color: #00B7FF;
-  &:hover{
+  &:hover {
     color: #f0000d;
-    background-color: white!important;
+    background-color: white !important;
   }
 }
 
@@ -41,24 +40,25 @@ img {
   height: auto;
 }
 
-.container{
-  height:auto;
+.container {
+  height: auto;
   //margin-top: 3em;
 }
 
-.row{
+.row {
   width: 85%;
   background: #bc7a41;
   &:first-child {
     border-radius: 10px 10px 0 0;
   }
-  &:last-child .grass{
+  &:last-child .grass {
     border-radius: 0 0 10px 10px;
   }
-  &:last-child{
+  &:last-child {
     border-radius: 0 0 10px 10px;
   }
 }
+
 .grass {
   //z-index: 2;
   position: relative;
@@ -67,7 +67,8 @@ img {
   width: 100%;
   margin: -4.8em 0 0 0;
 }
-.horse{
+
+.horse {
   position: relative;
   margin: -2em 0 2.5em 0;
   width: 100%;
@@ -78,49 +79,53 @@ img {
 .circlesRow {
   position: absolute;
   z-index: 99;
-  background-color: transparentize(whitesmoke,.5);
+  background-color: transparentize(whitesmoke, .5);
   //border-radius: 25px;
 }
-.racetrack{
+
+.racetrack {
 
 }
 
-.btn-lg{
+.btn-lg {
   margin-left: -1em;
 }
 
 // ===============
 // TABLE (ui-grid)
 // ===============
-.myTable{
+.myTable {
   //height: 10.8em;
   width: 84.8%;
   margin: 12em 0 0 -.9em;
 }
 
-.ui-grid{
+.ui-grid {
   border-radius: 10px;
 }
-.ui-grid-viewport{
+
+.ui-grid-viewport {
   //&:last-child{
   border-radius: 0 0 10px 10px;
   //}
 }
-.ui-grid-header div{
+
+.ui-grid-header div {
   border-radius: 10px 10px 0 0;
 }
-.ui-grid-header-canvas div{
+
+.ui-grid-header-canvas div {
   border-radius: 0px;
 }
+
 //.ui-grid-render-container{
 //  border: 2px solid black;
 //}
 
-
 // ============
 // LOGIN PAGE
 // ============
-.loginContainer{
+.loginContainer {
   margin-top: -40px;
 }
 
@@ -137,14 +142,17 @@ label {
   margin-top: .5em;
   //line-height: 2em;
 }
+
 .login {
   font-family: Sansus;
 }
+
 form {
   padding: 10px;
   background-color: #e9f8ff;
   //margin-top: -20px;
 }
+
 div.alert.alert-danger {
   margin-top: -25px;
   margin-bottom: 5px;
@@ -163,6 +171,7 @@ div.alert.alert-danger {
 .blue {
   fill: blue;
 }
+
 // Testing black border
 * {
   //border: 2px solid black;

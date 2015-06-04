@@ -5,7 +5,7 @@
 /* line 9, style.scss */
 body {
   padding: 50px;
-  font: 16px Sansus,"Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 16px Sansus, "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 /* line 14, style.scss */
@@ -13,7 +13,7 @@ body {
   padding: 0 0 0 5px;
 }
 
-/* line 19, style.scss */
+/* line 18, style.scss */
 ul.nav.nav-pills {
   border: 2px solid black;
   border-radius: 25px;
@@ -22,46 +22,46 @@ ul.nav.nav-pills {
   background-color: rgba(255, 255, 255, 0.5);
   margin-top: 10px;
 }
-/* line 26, style.scss */
+/* line 25, style.scss */
 ul.nav.nav-pills:hover {
   background-color: white;
 }
 
-/* line 31, style.scss */
+/* line 30, style.scss */
 a {
   color: #00B7FF;
 }
-/* line 33, style.scss */
+/* line 32, style.scss */
 a:hover {
   color: #f0000d;
   background-color: white !important;
 }
 
-/* line 39, style.scss */
+/* line 38, style.scss */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* line 44, style.scss */
+/* line 43, style.scss */
 .container {
   height: auto;
 }
 
-/* line 49, style.scss */
+/* line 48, style.scss */
 .row {
   width: 85%;
   background: #bc7a41;
 }
-/* line 52, style.scss */
+/* line 51, style.scss */
 .row:first-child {
   border-radius: 10px 10px 0 0;
 }
-/* line 55, style.scss */
+/* line 54, style.scss */
 .row:last-child .grass {
   border-radius: 0 0 10px 10px;
 }
-/* line 58, style.scss */
+/* line 57, style.scss */
 .row:last-child {
   border-radius: 0 0 10px 10px;
 }
@@ -75,57 +75,57 @@ img {
   margin: -4.8em 0 0 0;
 }
 
-/* line 70, style.scss */
+/* line 71, style.scss */
 .horse {
   position: relative;
   margin: -2em 0 2.5em 0;
   width: 100%;
 }
 
-/* line 78, style.scss */
+/* line 79, style.scss */
 .circlesRow {
   position: absolute;
   z-index: 99;
   background-color: rgba(245, 245, 245, 0.5);
 }
 
-/* line 88, style.scss */
+/* line 90, style.scss */
 .btn-lg {
   margin-left: -1em;
 }
 
-/* line 95, style.scss */
+/* line 97, style.scss */
 .myTable {
   width: 84.8%;
   margin: 12em 0 0 -.9em;
 }
 
-/* line 101, style.scss */
+/* line 103, style.scss */
 .ui-grid {
   border-radius: 10px;
 }
 
-/* line 104, style.scss */
+/* line 107, style.scss */
 .ui-grid-viewport {
   border-radius: 0 0 10px 10px;
 }
 
-/* line 109, style.scss */
+/* line 113, style.scss */
 .ui-grid-header div {
   border-radius: 10px 10px 0 0;
 }
 
-/* line 112, style.scss */
+/* line 117, style.scss */
 .ui-grid-header-canvas div {
   border-radius: 0px;
 }
 
-/* line 123, style.scss */
+/* line 128, style.scss */
 .loginContainer {
   margin-top: -40px;
 }
 
-/* line 127, style.scss */
+/* line 132, style.scss */
 .jumbotron {
   padding: 25px;
   color: red;
@@ -133,32 +133,32 @@ img {
   background-color: #e9f8ff;
 }
 
-/* line 134, style.scss */
+/* line 139, style.scss */
 label {
   font-family: Sansus;
   font-size: 25px;
   margin-top: .5em;
 }
 
-/* line 140, style.scss */
+/* line 146, style.scss */
 .login {
   font-family: Sansus;
 }
 
-/* line 143, style.scss */
+/* line 150, style.scss */
 form {
   padding: 10px;
   background-color: #e9f8ff;
 }
 
-/* line 148, style.scss */
+/* line 156, style.scss */
 div.alert.alert-danger {
   margin-top: -25px;
   margin-bottom: 5px;
   padding: 15px;
 }
 
-/* line 163, style.scss */
+/* line 171, style.scss */
 .blue {
   fill: blue;
 }
