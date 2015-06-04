@@ -12,6 +12,10 @@ router.get('/svg', function(req, res, next) {
     res.render('svgSmall', {});
 });
 
+router.get('/svgSmallTemplate.html', function(req, res, next) {
+    res.sendFile(path.resolve(__dirname,'../views','svgSmallTemplate.html'), {});
+});
+
 // passport.authenticate is specifying our ‘local’ strategy that we created, and specifies a failure and success redirect.
 router.post('/', passport.authenticate('local', {
         successRedirect: '/users',

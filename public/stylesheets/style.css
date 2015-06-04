@@ -169,12 +169,15 @@ input {
   font-size: 22px !important;
 }
 
-/* line 163, style.scss */
-.cellToolTip {
-  overflow: visible;
+/* line 164, style.scss */
+.grid {
+  width: 100%;
+  height: 250px;
 }
 
-/* line 167, style.scss */
-.tooltip {
-  top: 0 !important;
+/* line 169, style.scss */
+.grid-tooltip {
+  overflow: visible;
+  z-index: 9999999;
+  float: left;
 }

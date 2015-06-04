@@ -8,13 +8,6 @@ function sortByPc(a,b) {
     return 0;
 }
 
-var svgSmall = '<svg class="svg_1" width="40" height="30">' +
-    '<circle r="5" cy="7" cx="11" stroke-width="1.5" stroke="#000000" fill="none"></circle>' +
-    '<circle class="svg_2" r="5" cy="7" cx="27" stroke-width="1.5" stroke="#000000" fill="none"></circle>' +
-    '<circle class="svg_3" r="5" cy="21" cx="11" stroke-width="1.5" stroke="#000000" fill="none"></circle>' +
-    '<circle class="svg_4" r="5" cy="21" cx="27" stroke-width="1.5" stroke="#000000" fill="none"></circle>' +
-    '</svg>';
-
 var stableHorse = '<img class="stableHorse" src="/images/new/stable_horse.png">';
 
 app.controller("IndexController", ['$scope', '$http', function ($scope, $http) {
@@ -36,7 +29,7 @@ app.controller("IndexController", ['$scope', '$http', function ($scope, $http) {
     $scope.columns = [
         { field: 'Image', visible: false},
         { name: '  ', cellTemplate: stableHorse, width: 40},
-        { name: ' ', cellTemplate: svgSmall, width: 40, cellClass: 'cellToolTip'},
+        { name: ' ', cellTemplate: 'svgSmallTemplate.html', width: 40, cellClass: 'cellToolTip'},
         { field: 'region', name: 'Country' },
         { field: 'percent', name: 'Progress'}
     ];
@@ -64,20 +57,20 @@ app.directive('popover', function(){
     };
 });
 
-app.directive('tooltip', function(){
-    return {
-        restrict: 'A',
-        link: function(scope, element, attrs){
-            $(element).hover(function(){
-                // on mouseenter
-                $(element).tooltip('show');
-            }, function(){
-                // on mouseleave
-                $(element).tooltip('hide');
-            });
-        }
-    };
-});
+//app.directive('tooltip', function(){
+//    return {
+//        restrict: 'A',
+//        link: function(scope, element, attrs){
+//            $(element).hover(function(){
+//                // on mouseenter
+//                $(element).tooltip('show');
+//            }, function(){
+//                // on mouseleave
+//                $(element).tooltip('hide');
+//            });
+//        }
+//    };
+//});
 
 $(document).ready(function () {
     // Increment z-indexes

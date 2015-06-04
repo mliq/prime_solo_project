@@ -160,13 +160,18 @@ input {
 // CIRCLES
 // ============
 //
-.cellToolTip {
-  overflow: visible;
+
+.grid {
+  width: 100%;
+  height: 250px;
 }
 
-.tooltip {
-  top: 0 !important;
+.grid-tooltip {
+  overflow: visible;
+  z-index: 9999999;
+  float: left;
 }
+
 // ====================
 // Testing black border
 * {
