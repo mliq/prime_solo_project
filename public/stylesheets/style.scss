@@ -58,6 +58,12 @@ img {
   //transform: scale(1);
 }
 
+.circlesRow {
+  position: absolute;
+  z-index: 99;
+  background-color: transparentize(whitesmoke,.5);
+  //border-radius: 25px;
+}
 .racetrack{
 
 }

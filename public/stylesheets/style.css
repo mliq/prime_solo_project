@@ -64,43 +64,50 @@ img {
   width: 100%;
 }
 
-/* line 65, style.scss */
+/* line 61, style.scss */
+.circlesRow {
+  position: absolute;
+  z-index: 99;
+  background-color: rgba(245, 245, 245, 0.5);
+}
+
+/* line 71, style.scss */
 .btn-lg {
   margin-left: -1em;
 }
 
-/* line 72, style.scss */
+/* line 78, style.scss */
 .myTable {
   width: 84.8%;
   margin: 16em 0 0 -.9em;
 }
 
-/* line 78, style.scss */
+/* line 84, style.scss */
 .ui-grid {
   border-radius: 10px;
 }
 
-/* line 81, style.scss */
+/* line 87, style.scss */
 .ui-grid-viewport {
   border-radius: 0 0 10px 10px;
 }
 
-/* line 86, style.scss */
+/* line 92, style.scss */
 .ui-grid-header div {
   border-radius: 10px 10px 0 0;
 }
 
-/* line 89, style.scss */
+/* line 95, style.scss */
 .ui-grid-header-canvas div {
   border-radius: 0px;
 }
 
-/* line 100, style.scss */
+/* line 106, style.scss */
 .loginContainer {
   margin-top: -60px;
 }
 
-/* line 104, style.scss */
+/* line 110, style.scss */
 .jumbotron {
   padding: 25px;
   color: red;
@@ -108,26 +115,26 @@ img {
   background-color: #e9f8ff;
 }
 
-/* line 111, style.scss */
+/* line 117, style.scss */
 label {
   font-family: Sansus;
   font-size: 25px;
   margin-top: .5em;
 }
 
-/* line 117, style.scss */
+/* line 123, style.scss */
 .login {
   font-family: Sansus;
 }
 
-/* line 120, style.scss */
+/* line 126, style.scss */
 form {
   padding: 10px;
   background-color: #e9f8ff;
   margin-top: -20px;
 }
 
-/* line 131, style.scss */
+/* line 137, style.scss */
 ul.nav.nav-pills {
   border: 2px solid black;
   border-radius: 25px;
@@ -137,7 +144,7 @@ ul.nav.nav-pills {
   margin-top: -80px;
 }
 
-/* line 144, style.scss */
+/* line 150, style.scss */
 .blue {
   fill: blue;
 }

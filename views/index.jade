@@ -15,7 +15,7 @@ block content
     .main(ng-controller="IndexController")
         .container
             .row(ng-repeat="key in myData | limitTo:5")
-                //.circlesRow.col-xs-1
+                .circlesRow
                     include svg
                 .racetrack
                     .horse(region='{{key.region}}', ng-style='{"margin-left": "{{key.percent}}%"}')
