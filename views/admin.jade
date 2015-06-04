@@ -1,9 +1,5 @@
 extends index
-block append admin
-        li
-            a(href="", data-toggle="modal", data-target=".myModal") UPLOAD
-    -if(messages.length)
-        div.alert.alert-success #{messages}
+block modal
     .myModal.modal.fade(tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true")
         .modal-dialog
             .modal-content
@@ -15,4 +11,8 @@ block append admin
                     form(role="form", action="/data/upload", method="post", enctype="multipart/form-data")
                         input.btn.btn-lg(type="file", name="myfile", id="myfile")
                         input.btn.btn-primary(type='submit',value='Submit')
-    main(ng-view)
+    -if(messages.length)
+        div.alert.alert-success #{messages}
+block append admin
+        li
+            a(data-toggle="modal", data-target=".myModal") UPLOAD

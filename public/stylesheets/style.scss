@@ -104,7 +104,7 @@ img {
 // LOGIN PAGE
 // ============
 .loginContainer{
-  margin-top: -60px;
+  margin-top: -40px;
 }
 
 .jumbotron {
@@ -126,7 +126,12 @@ label {
 form {
   padding: 10px;
   background-color: #e9f8ff;
-  margin-top: -20px;
+  //margin-top: -20px;
+}
+div.alert.alert-danger {
+  margin-top: -25px;
+  margin-bottom: 5px;
+  padding: 15px;
 }
 
 //.container input {

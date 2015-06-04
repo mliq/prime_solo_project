@@ -103,7 +103,7 @@ img {
 
 /* line 106, style.scss */
 .loginContainer {
-  margin-top: -60px;
+  margin-top: -40px;
 }
 
 /* line 110, style.scss */
@@ -130,10 +130,16 @@ label {
 form {
   padding: 10px;
   background-color: #e9f8ff;
-  margin-top: -20px;
 }
 
-/* line 137, style.scss */
+/* line 131, style.scss */
+div.alert.alert-danger {
+  margin-top: -25px;
+  margin-bottom: 5px;
+  padding: 15px;
+}
+
+/* line 142, style.scss */
 ul.nav.nav-pills {
   border: 2px solid black;
   border-radius: 25px;
@@ -143,7 +149,7 @@ ul.nav.nav-pills {
   margin-top: 10px;
 }
 
-/* line 150, style.scss */
+/* line 155, style.scss */
 .blue {
   fill: blue;
 }
