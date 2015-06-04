@@ -18,8 +18,7 @@ block content
                 .racetrack
                     .horse(region='{{key.region}}', ng-style='{"margin-left": "{{key.percent}}%"}')
                         img(src="/images/cute_horse3.png",
-                        rel="popover", data-content="STATS", title="{{key.region}} test", data-placement="top", popover)
+                        rel="popover", data-content="Stats go here", title="Country: {{key.region}}", data-placement="top", popover)
                     .grass
         .container
-            img.stableHorse(src="/images/new/stable_horse.png")
             .myTable(ui-grid="myOptions")

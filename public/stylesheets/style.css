@@ -48,25 +48,25 @@ img {
   height: auto;
 }
 
-/* line 48, style.scss */
+/* line 47, style.scss */
 .row {
   width: 85%;
   background: #bc7a41;
 }
-/* line 51, style.scss */
+/* line 50, style.scss */
 .row:first-child {
   border-radius: 10px 10px 0 0;
 }
-/* line 54, style.scss */
+/* line 53, style.scss */
 .row:last-child .grass {
   border-radius: 0 0 10px 10px;
 }
-/* line 57, style.scss */
+/* line 56, style.scss */
 .row:last-child {
   border-radius: 0 0 10px 10px;
 }
 
-/* line 62, style.scss */
+/* line 61, style.scss */
 .grass {
   position: relative;
   background: url("/images/grass-nodirtcrop.png");
@@ -75,63 +75,63 @@ img {
   margin: -4.8em 0 0 0;
 }
 
-/* line 71, style.scss */
+/* line 70, style.scss */
 .horse {
   position: relative;
   margin: -2em 0 2.5em 0;
   width: 100%;
 }
 
-/* line 79, style.scss */
+/* line 76, style.scss */
 .circlesRow {
   position: absolute;
   z-index: 99;
   background-color: rgba(245, 245, 245, 0.5);
 }
 
-/* line 90, style.scss */
+/* line 86, style.scss */
 .btn-lg {
   margin-left: -1em;
 }
 
-/* line 97, style.scss */
+/* line 93, style.scss */
 .myTable {
   width: 84.8%;
   margin: 12em 0 0 -.9em;
 }
 
-/* line 103, style.scss */
+/* line 98, style.scss */
 .ui-grid {
   border-radius: 10px;
 }
 
-/* line 107, style.scss */
+/* line 102, style.scss */
 .ui-grid-viewport {
   border-radius: 0 0 10px 10px;
 }
 
-/* line 113, style.scss */
+/* line 106, style.scss */
 .ui-grid-header div {
   border-radius: 10px 10px 0 0;
 }
 
-/* line 117, style.scss */
+/* line 110, style.scss */
 .ui-grid-header-canvas div {
   border-radius: 0px;
 }
 
-/* line 139, style.scss */
+/* line 114, style.scss */
 .stableHorse {
   width: auto;
   height: 30px;
 }
 
-/* line 147, style.scss */
+/* line 121, style.scss */
 .loginContainer {
   margin-top: -40px;
 }
 
-/* line 151, style.scss */
+/* line 125, style.scss */
 .jumbotron {
   padding: 25px;
   color: red;
@@ -139,37 +139,42 @@ img {
   background-color: #e9f8ff;
 }
 
-/* line 158, style.scss */
+/* line 132, style.scss */
 label {
   font-family: Sansus;
   font-size: 25px;
   margin-top: .5em;
 }
 
-/* line 165, style.scss */
+/* line 139, style.scss */
 .login {
   font-family: Sansus;
 }
 
-/* line 169, style.scss */
+/* line 143, style.scss */
 form {
   padding: 10px;
   background-color: #e9f8ff;
 }
 
-/* line 175, style.scss */
+/* line 149, style.scss */
 div.alert.alert-danger {
   margin-top: -25px;
   margin-bottom: 5px;
   padding: 15px;
 }
 
-/* line 181, style.scss */
+/* line 155, style.scss */
 input {
   font-size: 22px !important;
 }
 
-/* line 193, style.scss */
-.blue {
-  fill: blue;
+/* line 163, style.scss */
+.cellToolTip {
+  overflow: visible;
+}
+
+/* line 167, style.scss */
+.tooltip {
+  top: 0 !important;
 }

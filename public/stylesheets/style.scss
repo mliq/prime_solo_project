@@ -42,7 +42,6 @@ img {
 
 .container {
   height: auto;
-  //margin-top: 3em;
 }
 
 .row {
@@ -72,15 +71,12 @@ img {
   position: relative;
   margin: -2em 0 2.5em 0;
   width: 100%;
-  //-ms-transform: scale(1);
-  //transform: scale(1);
 }
 
 .circlesRow {
   position: absolute;
   z-index: 99;
   background-color: transparentize(whitesmoke, .5);
-  //border-radius: 25px;
 }
 
 .racetrack {
@@ -95,7 +91,6 @@ img {
 // TABLE (ui-grid)
 // ===============
 .myTable {
-  //height: 10.8em;
   width: 84.8%;
   margin: 12em 0 0 -.9em;
 }
@@ -105,9 +100,7 @@ img {
 }
 
 .ui-grid-viewport {
-  //&:last-child{
   border-radius: 0 0 10px 10px;
-  //}
 }
 
 .ui-grid-header div {
@@ -118,28 +111,9 @@ img {
   border-radius: 0px;
 }
 
-//.ui-grid-header {
-//  height: 30px;
-//  max-height: 30px;
-//}
-
-//.ui-grid-header-cell {
-//  padding: 0px;
-//  //max-height: 30px !important;
-//}
-
-//.ui-grid-render-container{
-//  border: 2px solid black;
-//}
-
-//.ui-grid-coluiGrid-004 {
-  //display:inline-block;
-//}
-
 .stableHorse {
   width: auto;
   height: 30px;
-  //margin-top: -20px;
 }
 // ============
 // LOGIN PAGE
@@ -181,19 +155,19 @@ div.alert.alert-danger {
 input {
   font-size: 22px !important;
 }
-//.container input {
-//  width: 100%;
-//  clear: both;
-//}
 
 // ============
 // CIRCLES
 // ============
-
-.blue {
-  fill: blue;
+//
+.cellToolTip {
+  overflow: visible;
 }
 
+.tooltip {
+  top: 0 !important;
+}
+// ====================
 // Testing black border
 * {
   //border: 2px solid black;
