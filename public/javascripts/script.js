@@ -8,7 +8,11 @@ var stableHorse = '<img class="stableHorse" src="/images/new/stable_horse.png">'
 
 var regionTemplate = '<div class="ui-grid-cell-contents"><span class=" flag-icon-background flag-icon-{{row.entity.flag}}"></span>{{ COL_FIELD }}</div>';
 
+var lastMonth = new Date().getMonth()-1;
+
 app.controller("IndexController", ['$scope', '$http', function ($scope, $http) {
+    //last month
+    $scope.myDate = new Date().setMonth(lastMonth);
 
     $http.get('/data/json').
         success(function (data) {
@@ -34,7 +38,9 @@ app.controller("IndexController", ['$scope', '$http', function ($scope, $http) {
         data: 'tableData',
         columnDefs: $scope.columns,
         minRowsToShow: 18,
-        enableColumnMenus: false
+        enableColumnMenus: false,
+        enableHorizontalScrollbar: 0,
+        enableVerticalScrollbar: 0
     };
 
 }]);

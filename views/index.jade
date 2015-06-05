@@ -11,8 +11,9 @@ block content
                     a(href="/logout") LOGOUT
     //p Welcome to the #{title}!
     .main(ng-controller="IndexController")
-        h1 Welcome to the #{title}!
-        h2 May 2015: {{myData[0].region}} is in the lead with {{myData[0].percent}}%
+        img(src='/images/new/Logo.png')
+        h1 Welcome to the #{title}
+        h2 {{myDate|date: 'MMMM'}} 2015: {{myData[0].region}} is in the lead with {{myData[0].percent}}%
         br
         .container
             .row(ng-repeat="key in myData | limitTo:5")
