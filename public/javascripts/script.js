@@ -16,16 +16,18 @@ app.controller("IndexController", ['$scope', '$http', function ($scope, $http) {
 
     $http.get('/data/json').
         success(function (data) {
-            console.log(data);
             $scope.myData = data.sort(sortByPc);
-            console.log($scope.myData);
+            // Color circles based on data columns
+            $scope.circleColoring();
             //Remove first 5 rows from table data.
             $scope.tableData = $scope.myData.splice(5);
-
-            // Add Images
-            console.log($scope.tableData);
-            //$scope.tableData[9].image = svgSmall;
         });
+
+    $scope.circleColoring = function(){
+        // Big circle data
+        console.log($scope.myData);
+
+    };
 
     $scope.columns = [
         {name: '  ', cellTemplate: stableHorse, width: 40},
