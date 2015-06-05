@@ -1,8 +1,8 @@
 var app = angular.module('app', ['ui.grid', 'ui.bootstrap']);
 
-function sortByPc(a, b) {
+var sortByPc = function (a, b) {
     return b.percent - a.percent;
-}
+};
 
 var stableHorse = '<img class="stableHorse" src="/images/new/stable_horse.png">';
 
@@ -27,7 +27,7 @@ app.controller("IndexController", ['$scope', '$http', function ($scope, $http) {
         {name: '  ', cellTemplate: stableHorse, width: 40},
         {name: ' ', cellTemplate: 'svgSmallTemplate.html', width: 40},
         {field: 'region', name: 'Country', cellTemplate: regionTemplate},
-        {field: 'percent', name: '%', width: 51}
+        {field: 'percent', name: '%', width: 51, type: 'number'}
     ];
 
     $scope.myOptions = {
