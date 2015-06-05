@@ -113,44 +113,59 @@ img {
   color: #34C849;
 }
 
-/* line 114, style.scss */
+/* line 111, style.scss */
+.yellow {
+  color: #FDBC40;
+}
+
+/* line 115, style.scss */
+.red {
+  color: #FC615C;
+}
+
+/* line 119, style.scss */
+.blue {
+  color: #14CDFF;
+}
+
+/* line 126, style.scss */
 .myTable {
   width: 84.8%;
   margin: 19em 0 0 -.9em;
 }
 
-/* line 119, style.scss */
+/* line 131, style.scss */
 .ui-grid {
   border-radius: 10px;
 }
 
-/* line 123, style.scss */
+/* line 135, style.scss */
 .ui-grid-viewport {
   border-radius: 0 0 10px 10px;
 }
 
-/* line 127, style.scss */
+/* line 139, style.scss */
 .ui-grid-header div {
   border-radius: 10px 10px 0 0;
 }
 
-/* line 131, style.scss */
+/* line 143, style.scss */
 .ui-grid-header-canvas div {
   border-radius: 0px;
 }
 
-/* line 135, style.scss */
+/* line 147, style.scss */
 .stableHorse {
   width: auto;
   height: 30px;
 }
 
-/* line 143, style.scss */
+/* line 155, style.scss */
 .loginContainer {
   margin-top: -40px;
 }
 
-/* line 147, style.scss */
+/* line 159, style.scss */
 .jumbotron {
   padding: 25px;
   color: red;
@@ -158,57 +173,57 @@ img {
   background-color: #e9f8ff;
 }
 
-/* line 154, style.scss */
+/* line 166, style.scss */
 label {
   font-family: Sansus;
   font-size: 25px;
   margin-top: .5em;
 }
 
-/* line 161, style.scss */
+/* line 173, style.scss */
 .login {
   font-family: Sansus;
 }
 
-/* line 165, style.scss */
+/* line 177, style.scss */
 form {
   padding: 10px;
   background-color: #e9f8ff;
 }
 
-/* line 171, style.scss */
+/* line 183, style.scss */
 div.alert.alert-danger {
   margin-top: -25px;
   margin-bottom: 5px;
   padding: 15px;
 }
 
-/* line 177, style.scss */
+/* line 189, style.scss */
 input {
   font-size: 22px !important;
 }
 
-/* line 186, style.scss */
+/* line 198, style.scss */
 .grid {
   width: 100%;
   height: 250px;
 }
 
-/* line 191, style.scss */
+/* line 203, style.scss */
 .grid-tooltip {
   overflow: visible;
   z-index: 9999999;
   float: left;
 }
 
-/* line 201, style.scss */
+/* line 213, style.scss */
 .flag-icon {
   left: 65px;
   top: 3px;
   opacity: .9;
 }
 
-/* line 207, style.scss */
+/* line 219, style.scss */
 .flag-icon-background {
   margin-left: -5px;
   margin-top: -5px;

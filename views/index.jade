@@ -13,7 +13,7 @@ block content
     .main(ng-controller="IndexController")
         .container
             .row(ng-repeat="key in myData | limitTo:5")
-                .circlesRow(rel="popover", data-content="<span class='green'>Goal 1</span> Goal 2", title="GOALS", data-html="true", data-animation="false", data-placement="bottom", popover)
+                .circlesRow(rel="popover", data-content="<span class='green'>Milestone 1</span> <span class='yellow'>Milestone 2</span><br><span class='red'>Milestone 3</span> <span class='blue'>Milestone 4</span>", title="Milestones", data-html="true", data-animation="false", data-placement="bottom", popover)
                     include svg
                 .racetrack
                     .horse.animated.bounceInLeft(region='{{key.region}}', ng-style='{"margin-left": "{{key.percent}}%"}')
