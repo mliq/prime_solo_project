@@ -116,65 +116,68 @@ img {
   fill: transparent;
 }
 
-/* line 118, style.scss */
-.green {
+/* line 119, style.scss */
+.green, .svg_1.TRUE {
   color: #34C849;
   fill: #34C849;
 }
 
-/* line 123, style.scss */
-.yellow {
+/* line 124, style.scss */
+.yellow, .svg_2.TRUE {
   color: #FDBC40;
+  fill: #FDBC40;
 }
 
-/* line 127, style.scss */
-.red {
+/* line 129, style.scss */
+.red, .svg_3.TRUE {
   color: #FC615C;
+  fill: #FC615C;
 }
 
-/* line 131, style.scss */
-.blue {
+/* line 134, style.scss */
+.blue, .svg_4.TRUE {
   color: #14CDFF;
+  fill: #14CDFF;
 }
 
-/* line 138, style.scss */
+/* line 142, style.scss */
 .myTable {
   width: 84.8%;
   margin: 19em 0 0 -.9em;
 }
 
-/* line 143, style.scss */
+/* line 147, style.scss */
 .ui-grid {
   border-radius: 10px;
 }
 
-/* line 147, style.scss */
+/* line 151, style.scss */
 .ui-grid-viewport {
   border-radius: 0 0 10px 10px;
 }
 
-/* line 151, style.scss */
+/* line 155, style.scss */
 .ui-grid-header div {
   border-radius: 10px 10px 0 0;
 }
 
-/* line 155, style.scss */
+/* line 159, style.scss */
 .ui-grid-header-canvas div {
   border-radius: 0px;
 }
 
-/* line 159, style.scss */
+/* line 163, style.scss */
 .stableHorse {
   width: auto;
   height: 30px;
 }
 
-/* line 167, style.scss */
+/* line 171, style.scss */
 .loginContainer {
   margin-top: -40px;
 }
 
-/* line 171, style.scss */
+/* line 175, style.scss */
 .jumbotron {
   padding: 25px;
   color: red;
@@ -182,57 +185,57 @@ img {
   background-color: #e9f8ff;
 }
 
-/* line 178, style.scss */
+/* line 182, style.scss */
 label {
   font-family: Sansus;
   font-size: 25px;
   margin-top: .5em;
 }
 
-/* line 185, style.scss */
+/* line 189, style.scss */
 .login {
   font-family: Sansus;
 }
 
-/* line 189, style.scss */
+/* line 193, style.scss */
 form {
   padding: 10px;
   background-color: #e9f8ff;
 }
 
-/* line 195, style.scss */
+/* line 199, style.scss */
 div.alert.alert-danger {
   margin-top: -25px;
   margin-bottom: 5px;
   padding: 15px;
 }
 
-/* line 201, style.scss */
+/* line 205, style.scss */
 input {
   font-size: 22px !important;
 }
 
-/* line 210, style.scss */
+/* line 214, style.scss */
 .grid {
   width: 100%;
   height: 250px;
 }
 
-/* line 215, style.scss */
+/* line 219, style.scss */
 .grid-tooltip {
   overflow: visible;
   z-index: 9999999;
   float: left;
 }
 
-/* line 225, style.scss */
+/* line 229, style.scss */
 .flag-icon {
   left: 65px;
   top: 3px;
   opacity: .9;
 }
 
-/* line 231, style.scss */
+/* line 235, style.scss */
 .flag-icon-background {
   margin-left: -5px;
   margin-top: -5px;

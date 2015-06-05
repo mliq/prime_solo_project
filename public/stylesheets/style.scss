@@ -115,21 +115,25 @@ img {
 .transparent {
   fill: transparent;
 }
-.green {
+
+.green,.svg_1.TRUE {
   color: #34C849;
   fill: #34C849;
 }
 
-.yellow {
+.yellow,.svg_2.TRUE {
   color: #FDBC40;
+  fill: #FDBC40;
 }
 
-.red {
+.red,.svg_3.TRUE {
   color: #FC615C;
+  fill: #FC615C;
 }
 
-.blue {
+.blue,.svg_4.TRUE {
   color: #14CDFF;
+  fill: #14CDFF;
 }
 
 // ===============
