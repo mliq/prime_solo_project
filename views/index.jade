@@ -13,13 +13,12 @@ block content
     .main(ng-controller="IndexController")
         .container
             .row(ng-repeat="key in myData | limitTo:5")
-                .circlesRow
+                .circlesRow(rel="popover", data-content="<span class='green'>Goal 1</span> Goal 2", title="GOALS", data-html="true", data-animation="false", data-placement="bottom", popover)
                     include svg
                 .racetrack
                     .horse.animated.bounceInLeft(region='{{key.region}}', ng-style='{"margin-left": "{{key.percent}}%"}')
                         h4.flag-icon(class="flag-icon-{{key.flag}}")
-                        img(src="/images/cute_horse3.png",
-                        rel="popover", data-content="Percent: {{key.percent}}", title="Country: {{key.region}}", data-placement="top", popover)
-                    .grass
+                        img(src="/images/cute_horse3.png")
+                    .grass(rel="popover", data-content="{{key.percent}}%", title="{{key.region}}", data-placement="left", data-animation="false", popover)
         .container
             .myTable(ui-grid="myOptions")

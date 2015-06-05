@@ -79,12 +79,33 @@ img {
   background-color: transparentize(whitesmoke, .5);
 }
 
-.racetrack {
-
-}
-
 .btn-lg {
   margin-left: -1em;
+}
+
+// ===============
+// POPOVER
+// ===============
+/*.popover {
+  left: 115px !important;
+  opacity: .7 !important;
+}*/
+
+.popover .arrow {
+  display: none;
+}
+//
+//.circlesRow + .popover {
+//  opacity: 1 !important;
+//}
+
+.grass + .popover {
+    //opacity: .5 !important;
+  margin-left: 60px;
+  }
+
+.green {
+  color: #34C849;
 }
 
 // ===============
@@ -115,6 +136,7 @@ img {
   width: auto;
   height: 30px;
 }
+
 // ============
 // LOGIN PAGE
 // ============
@@ -181,6 +203,7 @@ input {
   top: 3px;
   opacity: .9;
 }
+
 .flag-icon-background {
   margin-left: -5px;
   margin-top: -5px;
@@ -188,6 +211,7 @@ input {
   height: 22px;
   display: inline-block;
 }
+
 // ====================
 // Testing black border
 * {

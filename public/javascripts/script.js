@@ -24,7 +24,6 @@ app.controller("IndexController", ['$scope', '$http', function ($scope, $http) {
         });
 
     $scope.columns = [
-        {field: 'Image', visible: false},
         {name: '  ', cellTemplate: stableHorse, width: 40},
         {name: ' ', cellTemplate: 'svgSmallTemplate.html', width: 40, cellClass: 'cellToolTip'},
         {field: 'region', name: 'Country', cellTemplate: regionTemplate},
