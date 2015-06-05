@@ -1,4 +1,4 @@
-var app = angular.module('app', ['ui.grid', 'ui.bootstrap']);
+var app = angular.module('app', ['ui.grid']);
 
 var sortByPc = function (a, b) {
     return b.percent - a.percent;
