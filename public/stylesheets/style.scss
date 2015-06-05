@@ -92,7 +92,7 @@ img {
 // ===============
 .myTable {
   width: 84.8%;
-  margin: 12em 0 0 -.9em;
+  margin: 19em 0 0 -.9em;
 }
 
 .ui-grid {
@@ -172,6 +172,15 @@ input {
   float: left;
 }
 
+// ============
+// FLAGS
+// ============
+//
+.flag-icon {
+  left: 65px;
+  top: 3px;
+  opacity: .7;
+}
 // ====================
 // Testing black border
 * {

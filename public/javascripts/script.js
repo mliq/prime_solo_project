@@ -1,4 +1,4 @@
-var app = angular.module('app', ['ui.grid']);
+var app = angular.module('app', ['ui.grid','ui.bootstrap']);
 
 function sortByPc(a,b) {
     if (a.percent < b.percent)

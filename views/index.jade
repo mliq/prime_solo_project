@@ -17,6 +17,7 @@ block content
                     include svg
                 .racetrack
                     .horse(region='{{key.region}}', ng-style='{"margin-left": "{{key.percent}}%"}')
+                        .flag-icon.flag-icon-gr
                         img(src="/images/cute_horse3.png",
                         rel="popover", data-content="Stats go here", title="Country: {{key.region}}", data-placement="top", popover)
                     .grass
