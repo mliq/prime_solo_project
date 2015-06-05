@@ -33,7 +33,8 @@ app.controller("IndexController", ['$scope', '$http', function ($scope, $http) {
     $scope.myOptions = {
         data: 'tableData',
         columnDefs: $scope.columns,
-        minRowsToShow: 18
+        minRowsToShow: 18,
+        enableColumnMenus: false
     };
 
 }]);
