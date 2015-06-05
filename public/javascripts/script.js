@@ -1,4 +1,4 @@
-var app = angular.module('app', ['ui.grid','ui.bootstrap']);
+var app = angular.module('app', ['ui.grid']);
 
 function sortByPc(a,b) {
     if (a.percent < b.percent)
@@ -23,8 +23,6 @@ app.controller("IndexController", ['$scope', '$http', function ($scope, $http) {
             console.log($scope.tableData);
             //$scope.tableData[9].image = svgSmall;
         });
-
-//headerCellTemplate: svgSmall - Bug causes header to grow, or other headings to appear cut off. https://github.com/angular-ui/ng-grid/issues/1776
 
     $scope.columns = [
         { field: 'Image', visible: false},
