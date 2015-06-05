@@ -1,11 +1,7 @@
-var app = angular.module('app', ['ui.grid','ui.bootstrap']);
+var app = angular.module('app', ['ui.grid', 'ui.bootstrap']);
 
-function sortByPc(a,b) {
-    if (a.percent < b.percent)
-        return 1;
-    if (a.percent > b.percent)
-        return -1;
-    return 0;
+function sortByPc(a, b) {
+    return b.percent - a.percent;
 }
 
 var stableHorse = '<img class="stableHorse" src="/images/new/stable_horse.png">';
@@ -14,8 +10,9 @@ app.controller("IndexController", ['$scope', '$http', function ($scope, $http) {
 
     $http.get('/data/json').
         success(function (data) {
+            console.log(data);
             $scope.myData = data.sort(sortByPc);
-
+            console.log($scope.myData);
             //Remove first 5 rows from table data.
             $scope.tableData = $scope.myData.splice(5);
 
@@ -25,11 +22,11 @@ app.controller("IndexController", ['$scope', '$http', function ($scope, $http) {
         });
 
     $scope.columns = [
-        { field: 'Image', visible: false},
-        { name: '  ', cellTemplate: stableHorse, width: 40},
-        { name: ' ', cellTemplate: 'svgSmallTemplate.html', width: 40, cellClass: 'cellToolTip'},
-        { field: 'region', name: 'Country' },
-        { field: 'percent', name: 'Progress'}
+        {field: 'Image', visible: false},
+        {name: '  ', cellTemplate: stableHorse, width: 40},
+        {name: ' ', cellTemplate: 'svgSmallTemplate.html', width: 40, cellClass: 'cellToolTip'},
+        {field: 'region', name: 'Country'},
+        {field: 'percent', name: 'Progress'}
     ];
 
     $scope.myOptions = {
@@ -40,14 +37,14 @@ app.controller("IndexController", ['$scope', '$http', function ($scope, $http) {
 
 }]);
 
-app.directive('popover', function(){
+app.directive('popover', function () {
     return {
         restrict: 'A',
-        link: function(scope, element, attrs){
-            $(element).hover(function(){
+        link: function (scope, element, attrs) {
+            $(element).hover(function () {
                 // on mouseenter
                 $(element).popover('show');
-            }, function(){
+            }, function () {
                 // on mouseleave
                 $(element).popover('hide');
             });
