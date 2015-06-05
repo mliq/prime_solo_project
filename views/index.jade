@@ -11,6 +11,9 @@ block content
                     a(href="/logout") LOGOUT
     //p Welcome to the #{title}!
     .main(ng-controller="IndexController")
+        h1 Welcome to the #{title}!
+        h2 May 2015: {{myData[0].region}} is in the lead with {{myData[0].percent}}%
+        br
         .container
             .row(ng-repeat="key in myData | limitTo:5")
                 .circlesRow(rel="popover", data-content="<span class='green'>Milestone 1</span> <span class='yellow'>Milestone 2</span><br><span class='red'>Milestone 3</span> <span class='blue'>Milestone 4</span>", title="Milestones", data-html="true", data-animation="false", data-placement="bottom", popover)
@@ -18,7 +21,7 @@ block content
                 .racetrack
                     .horse.animated.bounceInLeft(region='{{key.region}}', ng-style='{"margin-left": "{{key.percent}}%"}')
                         h4.flag-icon(class="flag-icon-{{key.flag}}")
-                        img(src="/images/cute_horse3.png")
-                    .grass(rel="popover", data-content="{{key.percent}}%", title="{{key.region}}", data-placement="left", data-animation="false", popover)
+                        img(src="/images/cute_horse3.png", rel="popover", data-content="{{key.percent}}%", title="{{key.region}}", data-placement="top", data-animation="false", popover)
+                    .grass
         .container
             .myTable(ui-grid="myOptions")

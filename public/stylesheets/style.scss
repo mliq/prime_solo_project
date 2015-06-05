@@ -84,25 +84,33 @@ img {
 }
 
 // ===============
-// POPOVER
+// POPOVERS
 // ===============
 /*.popover {
   left: 115px !important;
   opacity: .7 !important;
 }*/
 
-.popover .arrow {
-  display: none;
-}
+//.popover .arrow {
+//  display: none;
+//}
 //
 //.circlesRow + .popover {
 //  opacity: 1 !important;
 //}
 
 .grass + .popover {
-    //opacity: .5 !important;
-  margin-left: 60px;
+    opacity: .8 !important;
+  //margin-left: 12px;
+  width: 100px;
+  text-align: center;
+  //margin-left: -200px;
+  margin-top: -30px;
   }
+.popover-title,.popover-content {
+  //padding: 3px;
+  background-color: white;
+}
 
 .green {
   color: #34C849;

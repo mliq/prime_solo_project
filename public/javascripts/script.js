@@ -25,9 +25,9 @@ app.controller("IndexController", ['$scope', '$http', function ($scope, $http) {
 
     $scope.columns = [
         {name: '  ', cellTemplate: stableHorse, width: 40},
-        {name: ' ', cellTemplate: 'svgSmallTemplate.html', width: 40, cellClass: 'cellToolTip'},
+        {name: ' ', cellTemplate: 'svgSmallTemplate.html', width: 40},
         {field: 'region', name: 'Country', cellTemplate: regionTemplate},
-        {field: 'percent', name: 'Progress'}
+        {field: 'percent', name: '%', width: 51}
     ];
 
     $scope.myOptions = {
@@ -45,6 +45,7 @@ app.directive('popover', function () {
             $(element).hover(function () {
                 // on mouseenter
                 $(element).popover('show');
+                $('.popover').popover({followMouse: true});
             }, function () {
                 // on mouseleave
                 $(element).popover('hide');
