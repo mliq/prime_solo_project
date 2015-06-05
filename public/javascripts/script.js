@@ -6,6 +6,8 @@ function sortByPc(a, b) {
 
 var stableHorse = '<img class="stableHorse" src="/images/new/stable_horse.png">';
 
+var regionTemplate = '<div class="ui-grid-cell-contents"><span class=" flag-icon-background flag-icon-{{row.entity.flag}}"></span>{{ COL_FIELD }}</div>';
+
 app.controller("IndexController", ['$scope', '$http', function ($scope, $http) {
 
     $http.get('/data/json').
@@ -25,7 +27,7 @@ app.controller("IndexController", ['$scope', '$http', function ($scope, $http) {
         {field: 'Image', visible: false},
         {name: '  ', cellTemplate: stableHorse, width: 40},
         {name: ' ', cellTemplate: 'svgSmallTemplate.html', width: 40, cellClass: 'cellToolTip'},
-        {field: 'region', name: 'Country'},
+        {field: 'region', name: 'Country', cellTemplate: regionTemplate},
         {field: 'percent', name: 'Progress'}
     ];
 

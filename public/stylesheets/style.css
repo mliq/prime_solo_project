@@ -186,5 +186,14 @@ input {
 .flag-icon {
   left: 65px;
   top: 3px;
-  opacity: .75;
+  opacity: .9;
+}
+
+/* line 184, style.scss */
+.flag-icon-background {
+  margin-left: -5px;
+  margin-top: -5px;
+  width: 3em;
+  height: 22px;
+  display: inline-block;
 }
