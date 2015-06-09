@@ -11,13 +11,6 @@ body {
   font: 16px Sansus, "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-.nav {
-  //margin: 0px 0px 0px -50px;
-  //position: absolute;
-  //top: -50px;
-  //margin-left: -25px;
-}
-
 .navbar{
   min-height: 30px;
 }
@@ -70,7 +63,6 @@ img {
 }
 
 .grass {
-  //z-index: 2;
   position: relative;
   background: url("/images/grass-nodirtcrop.png");
   height: 4em;
@@ -97,29 +89,14 @@ img {
 // ===============
 // POPOVERS
 // ===============
-/*.popover {
-  left: 115px !important;
-  opacity: .7 !important;
-}*/
-
-//.popover .arrow {
-//  display: none;
-//}
-//
-//.circlesRow + .popover {
-//  opacity: 1 !important;
-//}
 
 .grass + .popover {
     opacity: .8 !important;
-  //margin-left: 12px;
   width: 100px;
   text-align: center;
-  //margin-left: -200px;
   margin-top: -30px;
   }
 .popover-title,.popover-content {
-  //padding: 3px;
   background-color: white;
 }
 
@@ -150,6 +127,7 @@ img {
 // ===============
 // TABLE (ui-grid)
 // ===============
+
 .myTable {
   width: 84.8%;
   margin: 19em 0 0 -.9em;
@@ -179,6 +157,7 @@ img {
 // ============
 // LOGIN PAGE
 // ============
+
 .loginContainer {
   margin-top: -40px;
 }
@@ -194,7 +173,6 @@ label {
   font-family: Sansus;
   font-size: 25px;
   margin-top: .5em;
-  //line-height: 2em;
 }
 
 .login {
@@ -204,7 +182,6 @@ label {
 form {
   padding: 10px;
   background-color: #e9f8ff;
-  //margin-top: -20px;
 }
 
 div.alert.alert-danger {
@@ -220,7 +197,6 @@ input {
 // ============
 // CIRCLES
 // ============
-//
 
 .grid {
   width: 100%;
@@ -236,7 +212,7 @@ input {
 // ============
 // FLAGS
 // ============
-//
+
 .flag-icon {
   left: 65px;
   top: 3px;
@@ -253,6 +229,8 @@ input {
 
 // ====================
 // Testing black border
+// ====================
+
 * {
   //border: 2px solid black;
 }
