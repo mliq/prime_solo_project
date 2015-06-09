@@ -7,8 +7,19 @@
 }
 
 body {
-  padding: 50px;
+  padding: 20px 50px;
   font: 16px Sansus, "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.nav {
+  //margin: 0px 0px 0px -50px;
+  //position: absolute;
+  //top: -50px;
+  //margin-left: -25px;
+}
+
+.navbar{
+  min-height: 30px;
 }
 
 .nav > li > a {

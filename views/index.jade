@@ -1,14 +1,14 @@
 extends layout
 block content
     block modal
-    .navbar.navbar-fixed-top
-        .container
-            ul.nav.nav-pills
-                li.title
-                    =title
-                block admin
-                li
-                    a(href="/logout") LOGOUT
+    .navbar
+        //.container
+        ul.nav.nav-pills
+            li.title
+                =title
+            block admin
+            li
+                a(href="/logout") LOGOUT
     //p Welcome to the #{title}!
     .main(ng-controller="IndexController")
         img(src='/images/new/Logo.png')
