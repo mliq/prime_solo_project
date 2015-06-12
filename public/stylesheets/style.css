@@ -10,7 +10,7 @@ body {
 
 /* line 14, style.scss */
 .navbar {
-  min-height: 30px;
+  margin: 0px;
 }
 
 /* line 18, style.scss */
@@ -25,7 +25,6 @@ ul.nav.nav-pills {
   padding: 3px 10px;
   display: inline-block;
   background-color: rgba(255, 255, 255, 0.5);
-  margin-top: 10px;
 }
 /* line 29, style.scss */
 ul.nav.nav-pills:hover {
