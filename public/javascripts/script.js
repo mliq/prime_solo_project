@@ -8,7 +8,7 @@ var stableHorse = '<img class="stableHorse" src="/images/new/stable_horse.png">'
 
 var regionTemplate = '<div class="ui-grid-cell-contents"><span class=" flag-icon-background flag-icon-{{row.entity.flag}}"></span>{{ COL_FIELD }}</div>';
 
-var lastMonth = new Date().getMonth()-1;
+var lastMonth = new Date().getMonth() - 1;
 
 app.controller("IndexController", ['$scope', '$http', function ($scope, $http) {
     //last month
